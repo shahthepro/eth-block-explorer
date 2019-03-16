@@ -3,6 +3,7 @@ import * as React from 'react';
 import { IWalletState } from '../types';
 import connectToMetaMask from '../lib/connectToMetaMask';
 import subscribeToBlocks from 'src/lib/subscribeToBlocks';
+import getEtherTransactions from 'src/lib/getEtherTransactions';
 
 /**
  * HOC for interacting with web3/software wallet
@@ -14,8 +15,10 @@ function withWallet(WrappedComponent: any) {
       connect: () => this.connectWallet(),
       disconnect: () => this.disconnectWallet(),
       
-      loading: false,
-      lastConnectionError: ''
+      isConnecting: false,
+      lastConnectionError: '',
+
+      isBlocksLoading: false,
     }
 
     startBlockSubscription = async () => {
@@ -23,12 +26,17 @@ function withWallet(WrappedComponent: any) {
         return;
       }
 
+      this.setState({
+        isBlocksLoading: true
+      });
+
       const { stream, unsubscribe } = (await subscribeToBlocks(this.state.web3!()));
       
       // Subscribe to block stream
       stream.subscribe({
         next: (latestBlocks: any) => {
           this.setState({
+            isBlocksLoading: false, /* Disable loading after first block has been loaded */
             latestBlocks
           })
         }
@@ -50,7 +58,7 @@ function withWallet(WrappedComponent: any) {
       }
 
       this.setState({
-        loading: true,
+        isConnecting: true,
         lastConnectionError: ''
       });
 
@@ -60,15 +68,18 @@ function withWallet(WrappedComponent: any) {
         // Everything is successful
         this.setState({
           isConnected: true,
-          loading: false,
+          isConnecting: false,
           lastConnectionError: '',
           latestBlocks: [],
+          getTransactionsFromBlock: (blockNumber: number) => {
+            return getEtherTransactions(blockNumber, connectedWallet.web3());
+          },
           ...connectedWallet
         });
       } catch (err) {
         // Something went wrong :(
         this.setState({
-          loading: false,
+          isConnecting: false,
           lastConnectionError: err.message,
         });
       }
@@ -85,13 +96,14 @@ function withWallet(WrappedComponent: any) {
       // Reset state
       this.setState({
         isConnected: false,
-        loading: false,
+        isConnecting: false,
         lastConnectionError: '',
         wallet: null,
         address: null,
         networkId: null,
         web3: null,
         latestBlocks: [],
+        getTransactionsFromBlock: null,
         disconnect: () => this.disconnectWallet(),
       });
     }

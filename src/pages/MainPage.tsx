@@ -1,7 +1,6 @@
 import * as React from 'react';
 import withWallet from 'src/components/withWallet';
-import { IWalletState } from 'src/types';
-import { BlockHeader } from 'web3-eth/types';
+import { IWalletState, IBlock } from 'src/types';
 
 interface IMainPageProps {
   wallet: IWalletState
@@ -13,14 +12,25 @@ class MainPage extends React.Component {
 
     return (
       <div>
-        <button onClick={wallet.connect} disabled={wallet.isConnected} aria-busy={wallet.isConnected && wallet.loading}>Connect</button>
-        <button onClick={wallet.disconnect} disabled={!wallet.isConnected} aria-busy={!wallet.isConnected && wallet.loading}>Disconnect</button>
+        <button onClick={wallet.connect} disabled={wallet.isConnected} aria-busy={wallet.isConnected && wallet.isConnecting}>Connect</button>
+        <button onClick={wallet.disconnect} disabled={!wallet.isConnected}>Disconnect</button>
         {
-          wallet.isConnected && (
+          wallet.isBlocksLoading && (
+            <div>Loading blocks...</div>
+          )
+        }
+        {
+          wallet.isConnected && !wallet.isBlocksLoading && (
             <div>
+              <h3>Recent Blocks</h3>
               <ul>
                 {
-                  (wallet.latestBlocks! as BlockHeader[]).map((block) => <li key={block.number}>{ block.number }</li>)
+                  (wallet.latestBlocks! as IBlock[]).map((block) => (
+                    <li 
+                      key={block.number.toString()}
+                      onClick={async () => { console.log(await wallet.getTransactionsFromBlock!(block.number as number))}}
+                    >{ block.number }</li>
+                  ))
                 }
               </ul>
             </div>

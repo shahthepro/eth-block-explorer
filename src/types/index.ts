@@ -1,6 +1,7 @@
 import Web3 from 'web3';
 import { Observable } from 'rxjs';
-import { Subscribe, BlockHeader } from 'web3-eth/types';
+import { Subscribe } from 'web3-eth/types';
+import { Transaction } from 'web3-core/types';
 
 export interface IWalletConnectedResponse {
   address: String,
@@ -10,7 +11,7 @@ export interface IWalletConnectedResponse {
 
 export interface IWalletState {
   isConnected: boolean,
-  loading: boolean,
+  isConnecting: boolean,
   connect(): void,
   disconnect(): void,
 
@@ -20,15 +21,25 @@ export interface IWalletState {
   networkId?: Number,
   web3?(): Web3,
 
-  latestBlocks?: BlockHeader[],
+  isBlocksLoading: boolean,
+  latestBlocks?: IBlock[],
+
+  getTransactionsFromBlock?(blockNumber: number): Transaction[],
 };
 
+export interface IBlock {
+  number: Number,
+  hash: String,
+  gasUsed: Number,
+  timestamp: Number,
+}
+
 export interface IBlockSubscriptionResponse {
-  stream: Observable<BlockHeader[]>,
+  stream: Observable<IBlock[]>,
   unsubscribe(): void
 }
 
 export interface IBlockHeaderSubscriptionResponse {
-  stream: Observable<BlockHeader>,
-  subscription: Subscribe<BlockHeader>
+  stream: Observable<IBlock>,
+  subscription: Subscribe<IBlock>
 }
