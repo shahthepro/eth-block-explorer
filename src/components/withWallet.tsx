@@ -2,6 +2,7 @@ import * as React from 'react';
 // import Web3 from 'web3';
 import { IWalletState } from '../types';
 import connectToMetaMask from '../lib/connectToMetaMask';
+import subscribeToBlocks from 'src/lib/subscribeToBlocks';
 
 /**
  * HOC for interacting with web3/software wallet
@@ -15,6 +16,31 @@ function withWallet(WrappedComponent: any) {
       
       loading: false,
       lastConnectionError: ''
+    }
+
+    startBlockSubscription() {
+      if (!this.state.isConnected) {
+        return;
+      }
+
+      const { stream, unsubscribe } = subscribeToBlocks(this.state.web3!());
+      
+      // Subscribe to block stream
+      stream.subscribe({
+        next: (latestBlocks: any) => {
+          this.setState({
+            latestBlocks
+          })
+        }
+      })
+
+      this.setState({
+        disconnect: () => {
+          // Unsubscribe from stream before disconnecting wallet
+          unsubscribe();
+          this.disconnectWallet();
+        }
+      })
     }
 
     connectWallet = async () => {
@@ -36,6 +62,7 @@ function withWallet(WrappedComponent: any) {
           isConnected: true,
           loading: false,
           lastConnectionError: '',
+          latestBlocks: [],
           ...connectedWallet
         });
       } catch (err) {
@@ -45,6 +72,9 @@ function withWallet(WrappedComponent: any) {
           lastConnectionError: err.message,
         });
       }
+
+      // Get recent blocks and subscribe to new blocks
+      this.startBlockSubscription();
     }
 
     disconnectWallet = () => {
@@ -59,7 +89,10 @@ function withWallet(WrappedComponent: any) {
         lastConnectionError: '',
         wallet: null,
         address: null,
-        networkId: null
+        networkId: null,
+        web3: null,
+        latestBlocks: [],
+        disconnect: () => this.disconnectWallet(),
       });
     }
 

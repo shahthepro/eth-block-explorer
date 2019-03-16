@@ -1,6 +1,9 @@
 import Web3 from 'web3';
 import { IWalletConnectedResponse } from 'src/types';
 
+/**
+ * Connects with any software wallet that has injected a web3 provider
+ */
 const connectToMetaMask = async (): Promise<IWalletConnectedResponse> => {
   const provider = Web3.givenProvider;
 
@@ -23,7 +26,6 @@ const connectToMetaMask = async (): Promise<IWalletConnectedResponse> => {
     networkId,
     web3: () => web3
   };
-
 };
 
 export default connectToMetaMask;

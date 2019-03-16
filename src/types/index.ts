@@ -1,4 +1,5 @@
 import Web3 from 'web3';
+import { Observable } from 'rxjs';
 
 export interface IWalletConnectedResponse {
   address: String,
@@ -18,5 +19,10 @@ export interface IWalletState {
   networkId?: Number,
   web3?(): Web3,
 
-  // latestBlocks?: []
+  latestBlocks?: any[],
 };
+
+export interface IBlockSubscriptionResponse {
+  stream: Observable<any>,
+  unsubscribe(): void
+}
