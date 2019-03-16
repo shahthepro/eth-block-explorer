@@ -18,12 +18,12 @@ function withWallet(WrappedComponent: any) {
       lastConnectionError: ''
     }
 
-    startBlockSubscription() {
+    startBlockSubscription = async () => {
       if (!this.state.isConnected) {
         return;
       }
 
-      const { stream, unsubscribe } = subscribeToBlocks(this.state.web3!());
+      const { stream, unsubscribe } = (await subscribeToBlocks(this.state.web3!()));
       
       // Subscribe to block stream
       stream.subscribe({

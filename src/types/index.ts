@@ -1,5 +1,6 @@
 import Web3 from 'web3';
 import { Observable } from 'rxjs';
+import { Subscribe, BlockHeader } from 'web3-eth/types';
 
 export interface IWalletConnectedResponse {
   address: String,
@@ -25,4 +26,9 @@ export interface IWalletState {
 export interface IBlockSubscriptionResponse {
   stream: Observable<any>,
   unsubscribe(): void
+}
+
+export interface IBlockHeaderSubscriptionResponse {
+  stream: Observable<any>,
+  subscription: Subscribe<BlockHeader>
 }
