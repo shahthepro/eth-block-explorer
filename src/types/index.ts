@@ -20,15 +20,15 @@ export interface IWalletState {
   networkId?: Number,
   web3?(): Web3,
 
-  latestBlocks?: any[],
+  latestBlocks?: BlockHeader[],
 };
 
 export interface IBlockSubscriptionResponse {
-  stream: Observable<any>,
+  stream: Observable<BlockHeader[]>,
   unsubscribe(): void
 }
 
 export interface IBlockHeaderSubscriptionResponse {
-  stream: Observable<any>,
+  stream: Observable<BlockHeader>,
   subscription: Subscribe<BlockHeader>
 }

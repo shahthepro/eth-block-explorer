@@ -1,6 +1,7 @@
 import * as React from 'react';
 import withWallet from 'src/components/withWallet';
 import { IWalletState } from 'src/types';
+import { BlockHeader } from 'web3-eth/types';
 
 interface IMainPageProps {
   wallet: IWalletState
@@ -19,7 +20,7 @@ class MainPage extends React.Component {
             <div>
               <ul>
                 {
-                  wallet.latestBlocks!.map((block: any) => <li key={block.number}>{ block.number }</li>)
+                  (wallet.latestBlocks! as BlockHeader[]).map((block) => <li key={block.number}>{ block.number }</li>)
                 }
               </ul>
             </div>

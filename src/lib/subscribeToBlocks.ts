@@ -18,8 +18,8 @@ const subscribeToBlocks = async (web3: Web3): Promise<IBlockSubscriptionResponse
   const recentBlocksStream = concat(last10BlocksObservable, replayNewBlocksSubject)
     .pipe(
       // Limit to 10 blocks
-      scan((blocks, newBlock: any) => {
-        const exists = blocks.find((block: any) => block.number === newBlock.number);
+      scan((blocks: BlockHeader[], newBlock: BlockHeader) => {
+        const exists = blocks.find((block: BlockHeader) => block.number === newBlock.number);
         if (exists) {
           return blocks;
         }
@@ -45,8 +45,8 @@ const subscribeToBlocks = async (web3: Web3): Promise<IBlockSubscriptionResponse
  * Returns a stream of last 10 blocks. Stream completes after retrieving the last 10 blocks.
  * @param web3 web3 instance
  */
-const  getLastMinedBlocksStream = (web3: Web3): Observable<any> => {
-  return new Observable(observer => {
+const  getLastMinedBlocksStream = (web3: Web3): Observable<BlockHeader> => {
+  return new Observable<BlockHeader>(observer => {
     // This function cannot be async or return a promise (http://reactivex.io/rxjs/class/es6/MiscJSDoc.js~TeardownLogicDoc.html)
     // So, wrapping with an anonymous self-invoking `async` function
     (async () => {
@@ -55,8 +55,8 @@ const  getLastMinedBlocksStream = (web3: Web3): Observable<any> => {
         
         // TODO: Replace the following with a BatchRequest
         for (let i = 0; i < 10; i++) {
-          let block: any = await web3.eth.getBlock(latestBlockNumber - 9 + i, false);
-          observer.next(block);
+          let block = await web3.eth.getBlock(latestBlockNumber - 9 + i, false);
+          observer.next(block as BlockHeader);
         }
     
         observer.complete();
@@ -75,9 +75,9 @@ const  getLastMinedBlocksStream = (web3: Web3): Observable<any> => {
 const subscribeToNewBlockHeaders = async (web3: Web3): Promise<IBlockHeaderSubscriptionResponse> => {
   let subscription: Subscribe<BlockHeader> = await web3.eth.subscribe('newBlockHeaders');
 
-  const stream = new Observable(observer => {
+  const stream = new Observable<BlockHeader>(observer => {
     try {
-      subscription.on('data', (block: any) => { observer.next(block); });
+      subscription.on('data', (block: BlockHeader) => { observer.next(block); });
     } catch (err) {
       observer.error(err);
     }
