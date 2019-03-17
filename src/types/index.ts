@@ -1,4 +1,5 @@
 import Web3 from 'web3';
+import 'typeface-roboto';
 import { Observable } from 'rxjs';
 import { Subscribe } from 'web3-eth/types';
 import { Transaction } from 'web3-core/types';
