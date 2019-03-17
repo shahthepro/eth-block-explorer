@@ -6,6 +6,7 @@ import { Wrapper, Header, HeaderContent, HeaderActions, Content } from './styles
 import { LinkButton } from './styles/Buttons';
 import styled from 'styled-components';
 import * as moment from 'moment';
+import ProgressSpinner from './ProgressSpinner';
 
 interface IBlockDetailViewProps {
   wallet: IWalletState,
@@ -121,7 +122,7 @@ class BlockDetailView extends React.Component<IBlockDetailViewProps, IBlockDetai
       </Content>
       <Header>Transactions { !loading ? `(${transactions.length})` : '' }</Header>
       <Content padded>
-        { loading && <div>Loading Transactions...</div> }
+        { loading && <ProgressSpinner /> }
         { !loading && <TransactionsListContainer>
           {
             transactions.length == 0 && <DetailsRow>

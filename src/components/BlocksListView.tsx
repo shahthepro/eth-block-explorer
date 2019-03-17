@@ -6,6 +6,7 @@ import {
   BlocksListViewItem,
 } from 'src/components/styles/BlocksListViewStyles';
 import { Content, Wrapper, Header } from './styles/ContentStyles';
+import ProgressSpinner from './ProgressSpinner';
 
 interface IBlocksListViewProps {
   loading: boolean
@@ -16,7 +17,7 @@ interface IBlocksListViewProps {
 
 const BlocksListViewItems = ({ loading, blocks, onItemClick }: IBlocksListViewProps) => {
   if (loading) {
-    return <div>Loading...</div>;
+    return <ProgressSpinner />;
   }
 
   if (!blocks || blocks.length == 0) {
