@@ -33,6 +33,9 @@ export interface IBlock {
   hash: String,
   gasUsed: Number,
   timestamp: Number,
+  miner: String,
+  gasLimit: Number,
+  // difficulty: Number,
 }
 
 export interface IBlockSubscriptionResponse {

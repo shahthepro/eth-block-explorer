@@ -1,13 +1,24 @@
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
+const RowWrapper = styled.div`
   display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  overflow: auto;
+`;
+
+const ColumnWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: auto;
+`;
+
+const Wrapper = styled(ColumnWrapper)`
   border: 1px solid #f0f0f0;
   box-sizing: border-box;
-  flex-direction: column;
   overflow: hidden;
   height: 100%;
-  overflow: hidden;
 `;
 
 const Header = styled.div`
@@ -29,13 +40,14 @@ const HeaderActions = styled.div`
 `;
 
 interface IContentProps {
-  padded?: boolean
+  padded?: boolean,
+  fixedSize?: boolean
 }
 
 const Content = styled.div<IContentProps>`
-  flex: auto 1 1;
+  flex: ${props => props.fixedSize ? 'auto 0 0' : ' auto 1 1'};
   overflow: auto;
-  padding: ${(props: any) => props.padded ? '1rem' : 0};
+  padding: ${props => props.padded ? '1rem' : 0};
 `;
 
 export {
@@ -43,5 +55,7 @@ export {
   Header,
   Content,
   HeaderContent,
-  HeaderActions
+  HeaderActions,
+  RowWrapper,
+  ColumnWrapper
 }

@@ -3,7 +3,9 @@ import { IWalletState, IBlock } from 'src/types';
 import * as PropTypes from 'prop-types';
 import { Transaction } from 'web3-core/types';
 import { Wrapper, Header, HeaderContent, HeaderActions, Content } from './styles/ContentStyles';
-import { PrimaryButton } from './styles/Buttons';
+import { LinkButton } from './styles/Buttons';
+import styled from 'styled-components';
+import * as moment from 'moment';
 
 interface IBlockDetailViewProps {
   wallet: IWalletState,
@@ -15,6 +17,43 @@ interface IBlockDetailViewState {
   loading: boolean,
   transactions: Transaction[]
 }
+
+const BorderedContainer = styled.div`
+  overflow-y: auto;
+  width: 100%;
+  border: 1px solid #f0f0f0;
+`;
+
+const DetailsContainer = styled(BorderedContainer)`
+  max-height: 140px;
+`;
+
+const TransactionsListContainer = styled(BorderedContainer)`
+  height: 100%;
+`;
+
+const DetailsRow = styled.div`
+  width: 100%;
+  /* overflow: hidden; */
+  border-bottom: 1px solid #f0f0f0;
+  &:last-child {
+    border: 0;
+  }
+`;
+
+const ColumnStyles = styled.div`
+  padding: 0.8rem;
+  display: inline-block;
+  box-sizing: border-box;
+`;
+
+const ColumnOneFifth = styled(ColumnStyles)`
+  width: 20%;
+`;
+
+const ColumnFourFifth = styled(ColumnStyles)`
+  width: 80%;
+`;
 
 class BlockDetailView extends React.Component<IBlockDetailViewProps, IBlockDetailViewState> {
   static propTypes = {
@@ -46,21 +85,52 @@ class BlockDetailView extends React.Component<IBlockDetailViewProps, IBlockDetai
   render() {
     const { block, onMyWalletClick } = this.props;
     const { loading, transactions } = this.state;
-
+    
     return <Wrapper>
       <Header>
         <HeaderContent>Block #{block.number}</HeaderContent>
-        <HeaderActions><PrimaryButton small onClick={onMyWalletClick}>MY WALLET</PrimaryButton></HeaderActions>
+        <HeaderActions><LinkButton small onClick={onMyWalletClick}>GO TO MY WALLET</LinkButton></HeaderActions>
       </Header>
+      <Content padded fixedSize>
+        <DetailsContainer>
+          <DetailsRow>
+            <ColumnOneFifth>Number/Height</ColumnOneFifth>
+            <ColumnFourFifth>{block.number}</ColumnFourFifth>
+          </DetailsRow>
+          <DetailsRow>
+            <ColumnOneFifth>Hash</ColumnOneFifth>
+            <ColumnFourFifth>{block.hash}</ColumnFourFifth>
+          </DetailsRow>
+          <DetailsRow>
+            <ColumnOneFifth>Timestamp</ColumnOneFifth>
+            <ColumnFourFifth>{moment(block.timestamp.valueOf(), 'X').format('MMM DD, YYYY HH:mm:ss')}</ColumnFourFifth>
+          </DetailsRow>
+          <DetailsRow>
+            <ColumnOneFifth>Mined By</ColumnOneFifth>
+            <ColumnFourFifth>{block.miner}</ColumnFourFifth>
+          </DetailsRow>
+          <DetailsRow>
+            <ColumnOneFifth>Gas Used</ColumnOneFifth>
+            <ColumnFourFifth>{block.gasUsed}</ColumnFourFifth>
+          </DetailsRow>
+          <DetailsRow>
+            <ColumnOneFifth>Gas Limit</ColumnOneFifth>
+            <ColumnFourFifth>{block.gasLimit}</ColumnFourFifth>
+          </DetailsRow>
+        </DetailsContainer>
+      </Content>
+      <Header>Transactions</Header>
       <Content padded>
         { loading && <div>Loading Transactions</div> }
-        { !loading && <div>
+        { !loading && <TransactionsListContainer>
           {
             transactions.map((tx: Transaction) => {
-              return <div key={tx.hash}>{tx.hash}</div>;
+              return <DetailsRow key={tx.hash}>
+                <ColumnStyles>{tx.hash}</ColumnStyles>
+              </DetailsRow>;
             })
           }
-        </div> }
+        </TransactionsListContainer> }
       </Content>
     </Wrapper>;
   }

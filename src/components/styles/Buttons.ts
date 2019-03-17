@@ -30,6 +30,18 @@ const PrimaryButton = styled(ButtonStyle)`
   }
 `;
 
+const LinkButton = styled(ButtonStyle)`
+  background-color: transparent;
+  color: rgba(0, 122, 255, 1);
+  padding: 0;
+  text-decoration: underline;
+
+  &:hover {
+    background-color: transparent;
+    color: rgba(0, 122, 255, 0.8);    
+  }
+`;
+
 const SecondaryButton = styled(ButtonStyle)`
   background-color: rgba(255, 122, 0, 1);
   &:hover {
@@ -39,5 +51,6 @@ const SecondaryButton = styled(ButtonStyle)`
 
 export {
   PrimaryButton,
-  SecondaryButton
+  SecondaryButton,
+  LinkButton
 }
