@@ -1,5 +1,6 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
+import * as moment from 'moment';
 import { IBlock } from 'src/types';
 import {
   BlocksListViewHeader,
@@ -33,7 +34,8 @@ const BlocksListViewItems = ({ loading, blocks, onItemClick }: IBlocksListViewPr
             onClick={(e) => { onItemClick && onItemClick(block, e); } }
             key={block.number.valueOf()}
           >
-            {block.number}
+            <div className="block-number">#{block.number}</div>
+            <div className="timestamp">{moment(block.timestamp.valueOf(), 'X').format("MMM DD, YYYY HH:mm")}</div>
           </BlocksListViewItem>
         ))
       }

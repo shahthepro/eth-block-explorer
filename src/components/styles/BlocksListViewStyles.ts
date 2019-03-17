@@ -32,6 +32,15 @@ const BlocksListViewItem = styled.div`
   color: #444;
   box-sizing: border-box;
 
+  .block-number {
+    color: #3498db;
+  }
+
+  .timestamp {
+    color: #77788f;
+    font-size: 0.7rem;
+  }
+
   &:last-child {
     border: 0;
   }
