@@ -119,10 +119,15 @@ class BlockDetailView extends React.Component<IBlockDetailViewProps, IBlockDetai
           </DetailsRow>
         </DetailsContainer>
       </Content>
-      <Header>Transactions</Header>
+      <Header>Transactions { !loading ? `(${transactions.length})` : '' }</Header>
       <Content padded>
-        { loading && <div>Loading Transactions</div> }
+        { loading && <div>Loading Transactions...</div> }
         { !loading && <TransactionsListContainer>
+          {
+            transactions.length == 0 && <DetailsRow>
+              <ColumnStyles>There are no ether transactions in this block</ColumnStyles>
+            </DetailsRow>
+          }
           {
             transactions.map((tx: Transaction) => {
               return <DetailsRow key={tx.hash}>
