@@ -1,33 +1,68 @@
 import * as React from 'react';
 import withWallet from 'src/components/withWallet';
-import { IWalletState } from 'src/types';
+import { IWalletState, IBlock } from 'src/types';
 import MasterDetailView from 'src/components/MasterDetailView';
 import BlocksListView from './BlocksListView';
+import BlockDetailView from './BlockDetailView';
+import ConnectWallet from './ConnectWallet';
 
 interface IBlockExplorerProps {
   wallet: IWalletState
 }
 
-class BlockExplorer extends React.Component {
+class BlockExplorer extends React.Component<IBlockExplorerProps> {
+  state = {
+    selectedItem: null
+  }
+
+  onBlockSelected = (block: IBlock, _: any) => {
+    this.setState({
+      selectedItem: block
+    });
+  }
+
+  onDisconnect = () => {
+    this.setState({
+      selectedItem: null,
+    });
+  }
+
   render() {
-    const { wallet } = this.props as IBlockExplorerProps;
+    const { wallet } = this.props;
+    const { selectedItem } = this.state;
+
+    const walletToPassdown: IWalletState = {
+      ...wallet,
+      disconnect: () => {
+        // Cleanup on disconnect
+        this.onDisconnect();
+        wallet.disconnect();
+      }
+    };
 
     return (
       <MasterDetailView
         masterOpen={wallet.isConnected}
-        masterSlot={ <BlocksListView 
-          blocks={wallet.latestBlocks!} 
-          loading={wallet.isBlocksLoading} 
-          onItemClick={ (block, e) => console.log(block) }
-          header="Recent Blocks" /> }
+
+        masterSlot={
+          <BlocksListView 
+            blocks={wallet.latestBlocks!} 
+            loading={wallet.isBlocksLoading} 
+            onItemClick={this.onBlockSelected}
+            header="Recent Blocks" />
+        }
+
         detailSlot={
-          <div>
+          <ConnectWallet wallet={walletToPassdown}>
             {
-              wallet.isConnected && <div>{wallet.address}</div>
+              selectedItem && (
+                <BlockDetailView 
+                  key={(selectedItem! as IBlock).number.valueOf()}
+                  block={selectedItem!} 
+                  wallet={walletToPassdown} />
+              )
             }
-            <button onClick={wallet.connect} disabled={wallet.isConnected} aria-busy={wallet.isConnected && wallet.isConnecting}>Connect</button>
-            <button onClick={wallet.disconnect} disabled={!wallet.isConnected && !wallet.isConnecting}>Disconnect</button>
-          </div>
+          </ConnectWallet>
         }
       />
     );

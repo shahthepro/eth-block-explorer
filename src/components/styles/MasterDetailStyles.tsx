@@ -7,7 +7,7 @@ const MasterDetailWrapper = styled.div`
   flex-direction: row;
   background-color: #fff;
   &.limit-height {
-    max-height: 500px;
+    height: 500px;
   }
 `;
 

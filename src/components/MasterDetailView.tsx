@@ -21,7 +21,7 @@ class MasterDetailView extends React.Component {
     };
 
     return (
-      <MasterDetailWrapper>
+      <MasterDetailWrapper className={'limit-height'}>
         <MasterContainer className={ masterOpen ? '' : 'master-closed' }>
           { masterOpen && masterSlot }
         </MasterContainer>

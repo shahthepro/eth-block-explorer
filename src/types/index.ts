@@ -25,7 +25,7 @@ export interface IWalletState {
   isBlocksLoading: boolean,
   latestBlocks?: IBlock[],
 
-  getTransactionsFromBlock?(blockNumber: number): Transaction[],
+  getTransactionsFromBlock?(blockNumber: number): Promise<Transaction[]>,
 };
 
 export interface IBlock {
