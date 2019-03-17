@@ -22,7 +22,7 @@ class MasterDetailView extends React.Component {
 
     return (
       <MasterDetailWrapper>
-        <MasterContainer>
+        <MasterContainer className={ masterOpen ? '' : 'master-closed' }>
           { masterOpen && masterSlot }
         </MasterContainer>
         <DetailsContainer>

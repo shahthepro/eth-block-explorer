@@ -7,6 +7,7 @@ const BlocksListViewWrapper = styled.div`
   flex-direction: column;
   overflow: hidden;
   height: 100%;
+  overflow: hidden;
 `;
 
 const BlocksListViewHeader = styled.div`

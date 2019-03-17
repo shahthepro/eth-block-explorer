@@ -8,6 +8,7 @@ const Container = styled.div`
   height: 100%;
   max-height: 100%;
   overflow: auto;
+  min-height: 500px;
 `;
 
 export default Container;
