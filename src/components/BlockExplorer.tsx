@@ -5,14 +5,19 @@ import MasterDetailView from 'src/components/MasterDetailView';
 import BlocksListView from './BlocksListView';
 import BlockDetailView from './BlockDetailView';
 import ConnectWallet from './ConnectWallet';
+import MyWallet from './MyWallet';
 
 interface IBlockExplorerProps {
   wallet: IWalletState
 }
 
-class BlockExplorer extends React.Component<IBlockExplorerProps> {
+interface IBlockExplorerState {
+  selectedItem?: IBlock
+}
+
+class BlockExplorer extends React.Component<IBlockExplorerProps, IBlockExplorerState> {
   state = {
-    selectedItem: null
+    selectedItem: undefined
   }
 
   onBlockSelected = (block: IBlock, _: any) => {
@@ -22,10 +27,14 @@ class BlockExplorer extends React.Component<IBlockExplorerProps> {
   }
 
   onDisconnect = () => {
-    this.setState({
-      selectedItem: null,
-    });
+    this.resetSelectedItem();
   }
+
+  resetSelectedItem = () => {
+    this.setState({
+      selectedItem: undefined
+    });
+  };
 
   render() {
     const { wallet } = this.props;
@@ -54,15 +63,19 @@ class BlockExplorer extends React.Component<IBlockExplorerProps> {
         }
 
         detailSlot={
-          <ConnectWallet wallet={walletToPassdown}>
-            {
-              selectedItem && (
-                <BlockDetailView 
-                  key={(selectedItem! as IBlock).number.valueOf()}
-                  block={selectedItem!} 
-                  wallet={walletToPassdown} />
-              )
-            }
+          <ConnectWallet wallet={wallet}>
+              {
+                !selectedItem && <MyWallet wallet={walletToPassdown} />
+              }
+              {
+                selectedItem && (
+                  <BlockDetailView 
+                    key={(selectedItem! as IBlock).number.valueOf()}
+                    block={selectedItem!} 
+                    onMyWalletClick={this.resetSelectedItem}
+                    wallet={wallet} />
+                )
+              }
           </ConnectWallet>
         }
       />

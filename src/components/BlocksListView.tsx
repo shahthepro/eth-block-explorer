@@ -3,11 +3,9 @@ import * as PropTypes from 'prop-types';
 import * as moment from 'moment';
 import { IBlock } from 'src/types';
 import {
-  BlocksListViewHeader,
-  BlocksListViewItemsWrapper,
-  BlocksListViewWrapper,
   BlocksListViewItem,
 } from 'src/components/styles/BlocksListViewStyles';
+import { Content, Wrapper, Header } from './styles/ContentStyles';
 
 interface IBlocksListViewProps {
   loading: boolean
@@ -22,12 +20,12 @@ const BlocksListViewItems = ({ loading, blocks, onItemClick }: IBlocksListViewPr
   }
 
   if (!blocks || blocks.length == 0) {
-    return <BlocksListViewItemsWrapper>
+    return <Content>
       <BlocksListViewItem className="non-clickable">No blocks found</BlocksListViewItem>
-    </BlocksListViewItemsWrapper>;
+    </Content>;
   }
   return (
-    <BlocksListViewItemsWrapper>
+    <Content>
       {
         blocks.map(block => (
           <BlocksListViewItem
@@ -39,7 +37,7 @@ const BlocksListViewItems = ({ loading, blocks, onItemClick }: IBlocksListViewPr
           </BlocksListViewItem>
         ))
       }
-    </BlocksListViewItemsWrapper>
+    </Content>
   );
 }
 
@@ -53,10 +51,10 @@ const BlocksListView = (props: IBlocksListViewProps) => {
   const { header } = props;
 
   return (
-    <BlocksListViewWrapper>
-      <BlocksListViewHeader>{ header }</BlocksListViewHeader>
+    <Wrapper>
+      <Header>{ header }</Header>
       <BlocksListViewItems {...props} />
-    </BlocksListViewWrapper>
+    </Wrapper>
   );
 };
 

@@ -3,9 +3,9 @@ import * as PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { IWalletState } from "src/types";
 import { Title, Subtitle } from 'src/components/styles/Typography';
-import { PrimaryButton, SecondaryButton } from 'src/components/styles/Buttons';
+import { PrimaryButton } from 'src/components/styles/Buttons';
 import { ErrorMessage } from './styles/ErrorStyles';
-import getNetworkName from 'src/lib/getNetworkName';
+// import getNetworkName from 'src/lib/getNetworkName';
 
 interface IConnectWalletProps {
   wallet: IWalletState
@@ -14,18 +14,15 @@ interface IConnectWalletProps {
 
 const ConnectWalletWrapper = styled.div`
   padding: 2rem;
+  border: 1px solid #f0f0f0;
+  box-sizing: border-box;
+  height: 100%;
+  overflow: auto;
 `;
 
 const ConnectWallet = ({ wallet, children }: IConnectWalletProps) => {
   if (wallet.isConnected) {
-    return <ConnectWalletWrapper>
-      <Title>My Wallet</Title>
-      <Subtitle>
-        You are connected to {getNetworkName(wallet.networkId!.valueOf())} network with the wallet address <em>{wallet.address}</em>
-      </Subtitle>
-      <SecondaryButton onClick={wallet.disconnect} disabled={!wallet.isConnected && !wallet.isConnecting}>Disconnect Wallet</SecondaryButton> 
-      { children }
-    </ConnectWalletWrapper>;
+    return children;
   }
 
   return <ConnectWalletWrapper>
