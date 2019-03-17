@@ -5,6 +5,9 @@ const Container = styled.div`
   margin: 0 auto;
   padding: 4rem 0;
   box-sizing: border-box;
+  height: 100%;
+  max-height: 100%;
+  overflow: auto;
 `;
 
 export default Container;

@@ -1,7 +1,8 @@
 import * as React from 'react';
 import withWallet from 'src/components/withWallet';
-import { IWalletState, IBlock } from 'src/types';
+import { IWalletState } from 'src/types';
 import MasterDetailView from 'src/components/MasterDetailView';
+import BlocksListView from './BlocksListView';
 
 interface IBlockExplorerProps {
   wallet: IWalletState
@@ -14,32 +15,11 @@ class BlockExplorer extends React.Component {
     return (
       <MasterDetailView
         masterOpen={wallet.isConnected}
-        masterSlot={
-          <div>
-            {
-              wallet.isConnected && wallet.isBlocksLoading && (
-                <div>Loading blocks...</div>
-              )
-            }
-            {
-              wallet.isConnected && !wallet.isBlocksLoading && (
-                <div>
-                  <h3>Recent Blocks</h3>
-                  <ul>
-                    {
-                      (wallet.latestBlocks! as IBlock[]).map((block) => (
-                        <li 
-                          key={block.number.toString()}
-                          onClick={async () => { console.log(await wallet.getTransactionsFromBlock!(block.number as number))}}
-                        >{ block.number }</li>
-                      ))
-                    }
-                  </ul>
-                </div>
-              )
-            }
-          </div>
-        }
+        masterSlot={ <BlocksListView 
+          blocks={wallet.latestBlocks!} 
+          loading={wallet.isBlocksLoading} 
+          onItemClick={ (block, e) => console.log(block) }
+          header="Recent Blocks" /> }
         detailSlot={
           <div>
             {

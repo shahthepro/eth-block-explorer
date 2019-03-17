@@ -5,12 +5,12 @@ html, body {
   background-color: #fafafa;
  }
  
- html {
+ html, body, #root {
    width: 100%;
    height: 100%;
    overflow: auto;
  }
 
  body {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
 }
