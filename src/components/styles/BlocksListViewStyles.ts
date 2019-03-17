@@ -11,10 +11,10 @@ const BlocksListViewWrapper = styled.div`
 `;
 
 const BlocksListViewHeader = styled.div`
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: 100;
   padding: 0.8rem 1rem;
   border-bottom: 1px solid #f0f0f0;
-  font-weight: 400;
   text-transform: uppercase;
   flex: auto 0 0;
 `;

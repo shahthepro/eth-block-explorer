@@ -43,6 +43,7 @@ class BlockExplorer extends React.Component<IBlockExplorerProps> {
     return (
       <MasterDetailView
         masterOpen={wallet.isConnected}
+        autoHeight={!wallet.isConnected}
 
         masterSlot={
           <BlocksListView 
