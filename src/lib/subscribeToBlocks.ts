@@ -1,7 +1,7 @@
 import { Observable, ReplaySubject, concat } from 'rxjs';
 import { scan } from 'rxjs/operators';
 import Web3 from 'web3';
-import { IBlockSubscriptionResponse, IBlockHeaderSubscriptionResponse, IBlock } from 'src/types';
+import { IBlockSubscriptionResponse, IBlockHeaderSubscriptionResponse, IBlock } from './../types';
 import { Subscribe } from 'web3-eth/types';
 
 /**

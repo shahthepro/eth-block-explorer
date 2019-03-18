@@ -1,5 +1,5 @@
 import Web3 from 'web3';
-import { ITransaction } from 'src/types';
+import { ITransaction } from './../types';
 // import { Observable, of } from 'rxjs';
 // import { filter } from 'rxjs/operators';
 

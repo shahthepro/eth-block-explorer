@@ -1,10 +1,10 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
-import { IWalletState } from 'src/types';
+import { IWalletState } from './../types';
 import { Wrapper, Header, Content } from './styles/ContentStyles';
 import { Subtitle } from './styles/Typography';
 import { SecondaryButton } from './styles/Buttons';
-import getNetworkName from 'src/lib/getNetworkName';
+import getNetworkName from './../lib/getNetworkName';
 
 interface IMyWalletProps {
   wallet: IWalletState

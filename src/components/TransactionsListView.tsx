@@ -2,8 +2,8 @@ import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import { TransactionsListWrapper, BlockDetailsRow, TransactionsListItem, BlockDetailsWrapper } from './styles/BlockDetailViewStyles';
 import { RowWrapper, HeaderContent, HeaderActions, ColumnOneFifth, ColumnFourFifth } from './styles/ContentStyles';
-import dropdown from 'src/res/dropdown.svg';
-import { ITransaction } from 'src/types';
+import dropdown from './../res/dropdown.svg';
+import { ITransaction } from './../types';
 
 interface ITransactionsListViewProps {
   transactions: ITransaction[],

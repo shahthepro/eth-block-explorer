@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import spinner from 'src/res/spinner.gif';
+import spinner from './../res/spinner.gif';
 
 const ProgressStyles = styled.div`
   margin: 0 auto;

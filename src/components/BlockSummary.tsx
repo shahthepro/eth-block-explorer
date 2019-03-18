@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { IBlock } from 'src/types';
+import { IBlock } from './../types';
 import * as PropTypes from 'prop-types';
 import { BlockDetailsWrapper, BlockDetailsRow } from './styles/BlockDetailViewStyles';
 import { ColumnOneFifth, ColumnFourFifth } from './styles/ContentStyles';

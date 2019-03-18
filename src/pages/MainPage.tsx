@@ -1,7 +1,7 @@
 import * as React from 'react';
-import Container from 'src/components/styles/Container';
-import BlockExplorer from 'src/components/BlockExplorer';
-import { Title } from 'src/components/styles/Typography';
+import Container from './../components/styles/Container';
+import BlockExplorer from './../components/BlockExplorer';
+import { Title } from './../components/styles/Typography';
 
 class MainPage extends React.Component {
   render() {

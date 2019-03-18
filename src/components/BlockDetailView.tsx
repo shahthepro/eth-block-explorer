@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { IWalletState, IBlock, ITransaction } from 'src/types';
+import { IWalletState, IBlock, ITransaction } from './../types';
 import * as PropTypes from 'prop-types';
 import { Wrapper, Header, HeaderContent, HeaderActions, Content } from './styles/ContentStyles';
 import { LinkButton } from './styles/Buttons';

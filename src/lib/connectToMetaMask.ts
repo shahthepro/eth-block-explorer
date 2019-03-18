@@ -1,5 +1,5 @@
 import Web3 from 'web3';
-import { IWalletConnectedResponse } from 'src/types';
+import { IWalletConnectedResponse } from './../types';
 
 /**
  * Connects with any software wallet that has injected a web3 provider

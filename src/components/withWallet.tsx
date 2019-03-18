@@ -2,8 +2,8 @@ import * as React from 'react';
 // import Web3 from 'web3';
 import { IWalletState } from '../types';
 import connectToMetaMask from '../lib/connectToMetaMask';
-import subscribeToBlocks from 'src/lib/subscribeToBlocks';
-import getEtherTransactions from 'src/lib/getEtherTransactions';
+import subscribeToBlocks from './../lib/subscribeToBlocks';
+import getEtherTransactions from './../lib/getEtherTransactions';
 
 /**
  * HOC for interacting with web3/software wallet

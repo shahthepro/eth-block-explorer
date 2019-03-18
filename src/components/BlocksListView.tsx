@@ -1,10 +1,10 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import * as moment from 'moment';
-import { IBlock } from 'src/types';
+import { IBlock } from './../types';
 import {
   BlocksListViewItem,
-} from 'src/components/styles/BlocksListViewStyles';
+} from './styles/BlocksListViewStyles';
 import { Content, Wrapper, Header } from './styles/ContentStyles';
 import ProgressSpinner from './ProgressSpinner';
 

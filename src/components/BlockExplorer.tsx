@@ -1,7 +1,7 @@
 import * as React from 'react';
-import withWallet from 'src/components/withWallet';
-import { IWalletState, IBlock } from 'src/types';
-import MasterDetailView from 'src/components/MasterDetailView';
+import withWallet from './withWallet';
+import { IWalletState, IBlock } from './../types';
+import MasterDetailView from './MasterDetailView';
 import BlocksListView from './BlocksListView';
 import BlockDetailView from './BlockDetailView';
 import ConnectWallet from './ConnectWallet';
