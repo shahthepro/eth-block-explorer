@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches <ProgressSpinner> snapshot 1`] = `
+<ProgressSpinner>
+  <styled.div>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": true,
+            "lastClassName": "dTWIfT",
+            "rules": Array [
+              "
+          margin: 0 auto;
+          text-align: center;
+        
+          img {
+            width: 100px;
+          }
+        ",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="sc-bdVaJa dTWIfT"
+      >
+        <img />
+      </div>
+    </StyledComponent>
+  </styled.div>
+</ProgressSpinner>
+`;
