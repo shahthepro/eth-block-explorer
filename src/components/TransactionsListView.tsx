@@ -57,7 +57,7 @@ class TransactionsListView extends React.Component<ITransactionsListViewProps, I
                       <HeaderActions><img src={dropdown} className={'dropdown-arrow'} /></HeaderActions>
                     </RowWrapper>
                   </div>
-                  <BlockDetailsWrapper className={'expanded-view'}>
+                  <BlockDetailsWrapper className={'expanded-view'} onClick={e => e.stopPropagation()}>
                     <BlockDetailsRow>
                       <ColumnOneFifth>Sender</ColumnOneFifth>
                       <ColumnFourFifth>{tx.from}</ColumnFourFifth>
