@@ -1,0 +1,696 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches <BlocksListView blocks=[]> snapshot 1`] = `
+<BlocksListView
+  blocks={Array []}
+  loading={false}
+  onItemClick={[Function]}
+>
+  <Styled(styled.div)>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": true,
+            "lastClassName": "dQTXtH",
+            "rules": Array [
+              "
+          display: flex;
+          flex-direction: column;
+          box-sizing: border-box;
+          overflow: auto;
+        ",
+              "
+          border: 1px solid #f0f0f0;
+          box-sizing: border-box;
+          overflow: hidden;
+          height: 100%;
+        ",
+            ],
+          },
+          "displayName": "Styled(styled.div)",
+          "foldedComponentIds": Array [
+            "sc-bwzfXH",
+          ],
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="sc-bwzfXH sc-htpNat dQTXtH"
+      >
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bxivhb",
+                  "isStatic": true,
+                  "lastClassName": "kRASmB",
+                  "rules": Array [
+                    "
+                font-size: 1.2rem;
+                font-weight: 100;
+                padding: 0.8rem 1rem;
+                border-bottom: 1px solid #f0f0f0;
+                text-transform: uppercase;
+                flex: auto 0 0;
+                display: flex;
+              ",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bxivhb",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="sc-bxivhb kRASmB"
+            />
+          </StyledComponent>
+        </styled.div>
+        <BlocksListViewItems
+          blocks={Array []}
+          loading={false}
+          onItemClick={[Function]}
+        >
+          <styled.div>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bZQynM",
+                    "isStatic": false,
+                    "lastClassName": "bcrsui",
+                    "rules": Array [
+                      "
+                  flex: ",
+                      [Function],
+                      ";
+                  overflow: auto;
+                  padding: ",
+                      [Function],
+                      ";
+                ",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bZQynM",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <div
+                className="sc-bZQynM bcrsui"
+              >
+                <Styled(styled.div)
+                  nonClickable={true}
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-fjdhpX",
+                          "isStatic": false,
+                          "lastClassName": "jyJVlm",
+                          "rules": Array [
+                            "
+                        font-size: 1rem;
+                        padding: 0.8rem 1rem;
+                        border-bottom: 1px solid #f0f0f0;
+                        transition: background-color 0.5s ease;
+                        color: #444;
+                        box-sizing: border-box;
+                        background-color: #fff;
+                      
+                        &:last-child {
+                          border: 0;
+                        }
+                      
+                        &:hover {
+                          background-color: ",
+                            [Function],
+                            ";
+                          color: ",
+                            [Function],
+                            ";
+                          cursor: ",
+                            [Function],
+                            ";
+                        }
+                      ",
+                            "
+                        .block-number {
+                          color: #3498db;
+                        }
+                      
+                        .timestamp {
+                          color: #77788f;
+                          font-size: 0.7rem;
+                        }
+                      ",
+                          ],
+                        },
+                        "displayName": "Styled(styled.div)",
+                        "foldedComponentIds": Array [
+                          "sc-jTzLTM",
+                        ],
+                        "render": [Function],
+                        "styledComponentId": "sc-fjdhpX",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    nonClickable={true}
+                  >
+                    <div
+                      className="sc-jTzLTM sc-fjdhpX jyJVlm"
+                    >
+                      No blocks found
+                    </div>
+                  </StyledComponent>
+                </Styled(styled.div)>
+              </div>
+            </StyledComponent>
+          </styled.div>
+        </BlocksListViewItems>
+      </div>
+    </StyledComponent>
+  </Styled(styled.div)>
+</BlocksListView>
+`;
+
+exports[`matches <BlocksListView blocks={...}> snapshot 1`] = `
+<BlocksListView
+  blocks={
+    Array [
+      Object {
+        "gasLimit": 1200,
+        "gasUsed": 1000,
+        "hash": "0xf",
+        "miner": "0xff",
+        "number": 2,
+        "timestamp": 1552823995,
+      },
+      Object {
+        "gasLimit": 1020,
+        "gasUsed": 2000,
+        "hash": "0xfe",
+        "miner": "0xfd",
+        "number": 4,
+        "timestamp": 1552810995,
+      },
+    ]
+  }
+  onItemClick={[Function]}
+>
+  <Styled(styled.div)>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": true,
+            "lastClassName": "dQTXtH",
+            "rules": Array [
+              "
+          display: flex;
+          flex-direction: column;
+          box-sizing: border-box;
+          overflow: auto;
+        ",
+              "
+          border: 1px solid #f0f0f0;
+          box-sizing: border-box;
+          overflow: hidden;
+          height: 100%;
+        ",
+            ],
+          },
+          "displayName": "Styled(styled.div)",
+          "foldedComponentIds": Array [
+            "sc-bwzfXH",
+          ],
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="sc-bwzfXH sc-htpNat dQTXtH"
+      >
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bxivhb",
+                  "isStatic": true,
+                  "lastClassName": "kRASmB",
+                  "rules": Array [
+                    "
+                font-size: 1.2rem;
+                font-weight: 100;
+                padding: 0.8rem 1rem;
+                border-bottom: 1px solid #f0f0f0;
+                text-transform: uppercase;
+                flex: auto 0 0;
+                display: flex;
+              ",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bxivhb",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="sc-bxivhb kRASmB"
+            />
+          </StyledComponent>
+        </styled.div>
+        <BlocksListViewItems
+          blocks={
+            Array [
+              Object {
+                "gasLimit": 1200,
+                "gasUsed": 1000,
+                "hash": "0xf",
+                "miner": "0xff",
+                "number": 2,
+                "timestamp": 1552823995,
+              },
+              Object {
+                "gasLimit": 1020,
+                "gasUsed": 2000,
+                "hash": "0xfe",
+                "miner": "0xfd",
+                "number": 4,
+                "timestamp": 1552810995,
+              },
+            ]
+          }
+          onItemClick={[Function]}
+        >
+          <styled.div>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bZQynM",
+                    "isStatic": false,
+                    "lastClassName": "bcrsui",
+                    "rules": Array [
+                      "
+                  flex: ",
+                      [Function],
+                      ";
+                  overflow: auto;
+                  padding: ",
+                      [Function],
+                      ";
+                ",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bZQynM",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <div
+                className="sc-bZQynM bcrsui"
+              >
+                <Styled(styled.div)
+                  key="2"
+                  onClick={[Function]}
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-fjdhpX",
+                          "isStatic": false,
+                          "lastClassName": "bTyIGf",
+                          "rules": Array [
+                            "
+                        font-size: 1rem;
+                        padding: 0.8rem 1rem;
+                        border-bottom: 1px solid #f0f0f0;
+                        transition: background-color 0.5s ease;
+                        color: #444;
+                        box-sizing: border-box;
+                        background-color: #fff;
+                      
+                        &:last-child {
+                          border: 0;
+                        }
+                      
+                        &:hover {
+                          background-color: ",
+                            [Function],
+                            ";
+                          color: ",
+                            [Function],
+                            ";
+                          cursor: ",
+                            [Function],
+                            ";
+                        }
+                      ",
+                            "
+                        .block-number {
+                          color: #3498db;
+                        }
+                      
+                        .timestamp {
+                          color: #77788f;
+                          font-size: 0.7rem;
+                        }
+                      ",
+                          ],
+                        },
+                        "displayName": "Styled(styled.div)",
+                        "foldedComponentIds": Array [
+                          "sc-jTzLTM",
+                        ],
+                        "render": [Function],
+                        "styledComponentId": "sc-fjdhpX",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="sc-jTzLTM sc-fjdhpX bTyIGf"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="block-number"
+                      >
+                        #
+                        2
+                      </div>
+                      <div
+                        className="timestamp"
+                      >
+                        Mar 17, 2019 17:29
+                      </div>
+                    </div>
+                  </StyledComponent>
+                </Styled(styled.div)>
+                <Styled(styled.div)
+                  key="4"
+                  onClick={[Function]}
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-fjdhpX",
+                          "isStatic": false,
+                          "lastClassName": "bTyIGf",
+                          "rules": Array [
+                            "
+                        font-size: 1rem;
+                        padding: 0.8rem 1rem;
+                        border-bottom: 1px solid #f0f0f0;
+                        transition: background-color 0.5s ease;
+                        color: #444;
+                        box-sizing: border-box;
+                        background-color: #fff;
+                      
+                        &:last-child {
+                          border: 0;
+                        }
+                      
+                        &:hover {
+                          background-color: ",
+                            [Function],
+                            ";
+                          color: ",
+                            [Function],
+                            ";
+                          cursor: ",
+                            [Function],
+                            ";
+                        }
+                      ",
+                            "
+                        .block-number {
+                          color: #3498db;
+                        }
+                      
+                        .timestamp {
+                          color: #77788f;
+                          font-size: 0.7rem;
+                        }
+                      ",
+                          ],
+                        },
+                        "displayName": "Styled(styled.div)",
+                        "foldedComponentIds": Array [
+                          "sc-jTzLTM",
+                        ],
+                        "render": [Function],
+                        "styledComponentId": "sc-fjdhpX",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="sc-jTzLTM sc-fjdhpX bTyIGf"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="block-number"
+                      >
+                        #
+                        4
+                      </div>
+                      <div
+                        className="timestamp"
+                      >
+                        Mar 17, 2019 13:53
+                      </div>
+                    </div>
+                  </StyledComponent>
+                </Styled(styled.div)>
+              </div>
+            </StyledComponent>
+          </styled.div>
+        </BlocksListViewItems>
+      </div>
+    </StyledComponent>
+  </Styled(styled.div)>
+</BlocksListView>
+`;
+
+exports[`matches <BlocksListView loading> snapshot 1`] = `
+<BlocksListView
+  blocks={Array []}
+  loading={true}
+  onItemClick={[Function]}
+>
+  <Styled(styled.div)>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": true,
+            "lastClassName": "dQTXtH",
+            "rules": Array [
+              "
+          display: flex;
+          flex-direction: column;
+          box-sizing: border-box;
+          overflow: auto;
+        ",
+              "
+          border: 1px solid #f0f0f0;
+          box-sizing: border-box;
+          overflow: hidden;
+          height: 100%;
+        ",
+            ],
+          },
+          "displayName": "Styled(styled.div)",
+          "foldedComponentIds": Array [
+            "sc-bwzfXH",
+          ],
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="sc-bwzfXH sc-htpNat dQTXtH"
+      >
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bxivhb",
+                  "isStatic": true,
+                  "lastClassName": "kRASmB",
+                  "rules": Array [
+                    "
+                font-size: 1.2rem;
+                font-weight: 100;
+                padding: 0.8rem 1rem;
+                border-bottom: 1px solid #f0f0f0;
+                text-transform: uppercase;
+                flex: auto 0 0;
+                display: flex;
+              ",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bxivhb",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="sc-bxivhb kRASmB"
+            />
+          </StyledComponent>
+        </styled.div>
+        <BlocksListViewItems
+          blocks={Array []}
+          loading={true}
+          onItemClick={[Function]}
+        >
+          <ProgressSpinner>
+            <styled.div>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-jzJRlG",
+                      "isStatic": true,
+                      "lastClassName": "fXDcDw",
+                      "rules": Array [
+                        "
+                    margin: 0 auto;
+                    text-align: center;
+                  
+                    img {
+                      width: 100px;
+                    }
+                  ",
+                      ],
+                    },
+                    "displayName": "styled.div",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-jzJRlG",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <div
+                  className="sc-jzJRlG fXDcDw"
+                >
+                  <img />
+                </div>
+              </StyledComponent>
+            </styled.div>
+          </ProgressSpinner>
+        </BlocksListViewItems>
+      </div>
+    </StyledComponent>
+  </Styled(styled.div)>
+</BlocksListView>
+`;

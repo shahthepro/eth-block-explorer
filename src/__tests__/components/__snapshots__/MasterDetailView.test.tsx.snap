@@ -1,0 +1,597 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches <MasterDetailView autoHeight masterOpen> snapshot 1`] = `
+<MasterDetailView
+  autoHeight={true}
+  detailSlot={
+    <div>
+      Details
+    </div>
+  }
+  masterOpen={true}
+  masterSlot={
+    <div>
+      Master
+    </div>
+  }
+>
+  <styled.div
+    className="limit-height auto-height"
+  >
+    <StyledComponent
+      className="limit-height auto-height"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": true,
+            "lastClassName": "kxKaOB",
+            "rules": Array [
+              "
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          background-color: #fff;
+          &.limit-height {
+            max-height: 580px;
+          }
+          &.auto-height {
+            height: auto;
+          }
+        ",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="limit-height auto-height sc-bdVaJa kxKaOB"
+      >
+        <styled.div
+          className=""
+        >
+          <StyledComponent
+            className=""
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bwzfXH",
+                  "isStatic": true,
+                  "lastClassName": "lacFfN",
+                  "rules": Array [
+                    "
+                flex: 280px 0 0;
+                transition: flex 0.3s ease, opacity 0.3s ease 0.3s;
+                opacity: 1;
+                &.master-closed {
+                  flex: 0px 0 0;
+                  opacity: 0;
+                }
+              ",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bwzfXH",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="sc-bwzfXH lacFfN"
+            >
+              <div>
+                Master
+              </div>
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htpNat",
+                  "isStatic": true,
+                  "lastClassName": "cXclpg",
+                  "rules": Array [
+                    "
+                flex: auto;
+                transition: flex 0.3s ease;
+              ",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-htpNat",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="sc-htpNat cXclpg"
+            >
+              <div>
+                Details
+              </div>
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</MasterDetailView>
+`;
+
+exports[`matches <MasterDetailView autoHeight> snapshot 1`] = `
+<MasterDetailView
+  autoHeight={true}
+  detailSlot={
+    <div>
+      Details
+    </div>
+  }
+  masterOpen={true}
+  masterSlot={
+    <div>
+      Master
+    </div>
+  }
+>
+  <styled.div
+    className="limit-height auto-height"
+  >
+    <StyledComponent
+      className="limit-height auto-height"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": true,
+            "lastClassName": "kxKaOB",
+            "rules": Array [
+              "
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          background-color: #fff;
+          &.limit-height {
+            max-height: 580px;
+          }
+          &.auto-height {
+            height: auto;
+          }
+        ",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="limit-height auto-height sc-bdVaJa kxKaOB"
+      >
+        <styled.div
+          className=""
+        >
+          <StyledComponent
+            className=""
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bwzfXH",
+                  "isStatic": true,
+                  "lastClassName": "lacFfN",
+                  "rules": Array [
+                    "
+                flex: 280px 0 0;
+                transition: flex 0.3s ease, opacity 0.3s ease 0.3s;
+                opacity: 1;
+                &.master-closed {
+                  flex: 0px 0 0;
+                  opacity: 0;
+                }
+              ",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bwzfXH",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="sc-bwzfXH lacFfN"
+            >
+              <div>
+                Master
+              </div>
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htpNat",
+                  "isStatic": true,
+                  "lastClassName": "cXclpg",
+                  "rules": Array [
+                    "
+                flex: auto;
+                transition: flex 0.3s ease;
+              ",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-htpNat",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="sc-htpNat cXclpg"
+            >
+              <div>
+                Details
+              </div>
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</MasterDetailView>
+`;
+
+exports[`matches <MasterDetailView masterOpen> snapshot 1`] = `
+<MasterDetailView
+  autoHeight={false}
+  detailSlot={
+    <div>
+      Details
+    </div>
+  }
+  masterOpen={true}
+  masterSlot={
+    <div>
+      Master
+    </div>
+  }
+>
+  <styled.div
+    className="limit-height "
+  >
+    <StyledComponent
+      className="limit-height "
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": true,
+            "lastClassName": "kxKaOB",
+            "rules": Array [
+              "
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          background-color: #fff;
+          &.limit-height {
+            max-height: 580px;
+          }
+          &.auto-height {
+            height: auto;
+          }
+        ",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="limit-height  sc-bdVaJa kxKaOB"
+      >
+        <styled.div
+          className=""
+        >
+          <StyledComponent
+            className=""
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bwzfXH",
+                  "isStatic": true,
+                  "lastClassName": "lacFfN",
+                  "rules": Array [
+                    "
+                flex: 280px 0 0;
+                transition: flex 0.3s ease, opacity 0.3s ease 0.3s;
+                opacity: 1;
+                &.master-closed {
+                  flex: 0px 0 0;
+                  opacity: 0;
+                }
+              ",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bwzfXH",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="sc-bwzfXH lacFfN"
+            >
+              <div>
+                Master
+              </div>
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htpNat",
+                  "isStatic": true,
+                  "lastClassName": "cXclpg",
+                  "rules": Array [
+                    "
+                flex: auto;
+                transition: flex 0.3s ease;
+              ",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-htpNat",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="sc-htpNat cXclpg"
+            >
+              <div>
+                Details
+              </div>
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</MasterDetailView>
+`;
+
+exports[`matches <MasterDetailView> snapshot 1`] = `
+<MasterDetailView
+  autoHeight={false}
+  detailSlot={
+    <div>
+      Details
+    </div>
+  }
+  masterOpen={true}
+  masterSlot={
+    <div>
+      Master
+    </div>
+  }
+>
+  <styled.div
+    className="limit-height "
+  >
+    <StyledComponent
+      className="limit-height "
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": true,
+            "lastClassName": "kxKaOB",
+            "rules": Array [
+              "
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          background-color: #fff;
+          &.limit-height {
+            max-height: 580px;
+          }
+          &.auto-height {
+            height: auto;
+          }
+        ",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="limit-height  sc-bdVaJa kxKaOB"
+      >
+        <styled.div
+          className=""
+        >
+          <StyledComponent
+            className=""
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bwzfXH",
+                  "isStatic": true,
+                  "lastClassName": "lacFfN",
+                  "rules": Array [
+                    "
+                flex: 280px 0 0;
+                transition: flex 0.3s ease, opacity 0.3s ease 0.3s;
+                opacity: 1;
+                &.master-closed {
+                  flex: 0px 0 0;
+                  opacity: 0;
+                }
+              ",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bwzfXH",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="sc-bwzfXH lacFfN"
+            >
+              <div>
+                Master
+              </div>
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htpNat",
+                  "isStatic": true,
+                  "lastClassName": "cXclpg",
+                  "rules": Array [
+                    "
+                flex: auto;
+                transition: flex 0.3s ease;
+              ",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-htpNat",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="sc-htpNat cXclpg"
+            >
+              <div>
+                Details
+              </div>
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</MasterDetailView>
+`;
