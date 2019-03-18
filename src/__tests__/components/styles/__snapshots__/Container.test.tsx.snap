@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches <Container> snapshot 1`] = `
+<styled.div>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": true,
+          "lastClassName": "jdaVhf",
+          "rules": Array [
+            "
+        width: 1000px;
+        margin: 0 auto;
+        padding: 4rem 0;
+        box-sizing: border-box;
+        height: 100%;
+        max-height: 100%;
+        overflow: auto;
+        /* min-height: 500px; */
+      ",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="sc-bdVaJa jdaVhf"
+    />
+  </StyledComponent>
+</styled.div>
+`;

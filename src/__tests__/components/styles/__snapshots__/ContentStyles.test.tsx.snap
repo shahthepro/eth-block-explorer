@@ -1,0 +1,729 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches <BorderedWrapper> snapshot 1`] = `
+<styled.div>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-VigVT",
+          "isStatic": true,
+          "lastClassName": "fvMnZc",
+          "rules": Array [
+            "
+        width: 100%;
+        border: 1px solid #f0f0f0;
+      ",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-VigVT",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="sc-VigVT fvMnZc"
+    />
+  </StyledComponent>
+</styled.div>
+`;
+
+exports[`matches <ColumnFourFifth> snapshot 1`] = `
+<Styled(styled.div)>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-iwsKbI",
+          "isStatic": true,
+          "lastClassName": "iWBUcV",
+          "rules": Array [
+            "
+        padding: 0.8rem;
+        display: inline-block;
+        box-sizing: border-box;
+      ",
+            "
+        width: 80%;
+      ",
+          ],
+        },
+        "displayName": "Styled(styled.div)",
+        "foldedComponentIds": Array [
+          "sc-gzVnrw",
+        ],
+        "render": [Function],
+        "styledComponentId": "sc-iwsKbI",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="sc-gzVnrw sc-iwsKbI iWBUcV"
+    />
+  </StyledComponent>
+</Styled(styled.div)>
+`;
+
+exports[`matches <ColumnFullWidth> snapshot 1`] = `
+<Styled(styled.div)>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-gqjmRU",
+          "isStatic": true,
+          "lastClassName": "gfeRvr",
+          "rules": Array [
+            "
+        padding: 0.8rem;
+        display: inline-block;
+        box-sizing: border-box;
+      ",
+            "
+        width: 100%;
+      ",
+          ],
+        },
+        "displayName": "Styled(styled.div)",
+        "foldedComponentIds": Array [
+          "sc-gzVnrw",
+        ],
+        "render": [Function],
+        "styledComponentId": "sc-gqjmRU",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="sc-gzVnrw sc-gqjmRU gfeRvr"
+    />
+  </StyledComponent>
+</Styled(styled.div)>
+`;
+
+exports[`matches <ColumnOneFifth> snapshot 1`] = `
+<Styled(styled.div)>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-htoDjs",
+          "isStatic": true,
+          "lastClassName": "eKbxVS",
+          "rules": Array [
+            "
+        padding: 0.8rem;
+        display: inline-block;
+        box-sizing: border-box;
+      ",
+            "
+        width: 20%;
+      ",
+          ],
+        },
+        "displayName": "Styled(styled.div)",
+        "foldedComponentIds": Array [
+          "sc-gzVnrw",
+        ],
+        "render": [Function],
+        "styledComponentId": "sc-htoDjs",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="sc-gzVnrw sc-htoDjs eKbxVS"
+    />
+  </StyledComponent>
+</Styled(styled.div)>
+`;
+
+exports[`matches <ColumnOneFourth> snapshot 1`] = `
+<Styled(styled.div)>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-dnqmqq",
+          "isStatic": true,
+          "lastClassName": "ddTnEL",
+          "rules": Array [
+            "
+        padding: 0.8rem;
+        display: inline-block;
+        box-sizing: border-box;
+      ",
+            "
+        width: 25%;
+      ",
+          ],
+        },
+        "displayName": "Styled(styled.div)",
+        "foldedComponentIds": Array [
+          "sc-gzVnrw",
+        ],
+        "render": [Function],
+        "styledComponentId": "sc-dnqmqq",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="sc-gzVnrw sc-dnqmqq ddTnEL"
+    />
+  </StyledComponent>
+</Styled(styled.div)>
+`;
+
+exports[`matches <ColumnThreeFourth> snapshot 1`] = `
+<Styled(styled.div)>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-gZMcBi",
+          "isStatic": true,
+          "lastClassName": "jgpgel",
+          "rules": Array [
+            "
+        padding: 0.8rem;
+        display: inline-block;
+        box-sizing: border-box;
+      ",
+            "
+        width: 75%;
+      ",
+          ],
+        },
+        "displayName": "Styled(styled.div)",
+        "foldedComponentIds": Array [
+          "sc-gzVnrw",
+        ],
+        "render": [Function],
+        "styledComponentId": "sc-gZMcBi",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="sc-gzVnrw sc-gZMcBi jgpgel"
+    />
+  </StyledComponent>
+</Styled(styled.div)>
+`;
+
+exports[`matches <ColumnWrapper> snapshot 1`] = `
+<styled.div>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bwzfXH",
+          "isStatic": true,
+          "lastClassName": "biijvj",
+          "rules": Array [
+            "
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        overflow: auto;
+      ",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bwzfXH",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="sc-bwzfXH biijvj"
+    />
+  </StyledComponent>
+</styled.div>
+`;
+
+exports[`matches <Content fixedSize> snapshot 1`] = `
+<styled.div
+  fixedSize={true}
+>
+  <StyledComponent
+    fixedSize={true}
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bZQynM",
+          "isStatic": false,
+          "lastClassName": "fOnjCr",
+          "rules": Array [
+            "
+        flex: ",
+            [Function],
+            ";
+        overflow: auto;
+        padding: ",
+            [Function],
+            ";
+      ",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bZQynM",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="sc-bZQynM fOnjCr"
+    />
+  </StyledComponent>
+</styled.div>
+`;
+
+exports[`matches <Content padded fixedSize> snapshot 1`] = `
+<styled.div
+  fixedSize={true}
+  padded={true}
+>
+  <StyledComponent
+    fixedSize={true}
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bZQynM",
+          "isStatic": false,
+          "lastClassName": "jcGnXn",
+          "rules": Array [
+            "
+        flex: ",
+            [Function],
+            ";
+        overflow: auto;
+        padding: ",
+            [Function],
+            ";
+      ",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bZQynM",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    padded={true}
+  >
+    <div
+      className="sc-bZQynM jcGnXn"
+    />
+  </StyledComponent>
+</styled.div>
+`;
+
+exports[`matches <Content padded> snapshot 1`] = `
+<styled.div
+  padded={true}
+>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bZQynM",
+          "isStatic": false,
+          "lastClassName": "ezknic",
+          "rules": Array [
+            "
+        flex: ",
+            [Function],
+            ";
+        overflow: auto;
+        padding: ",
+            [Function],
+            ";
+      ",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bZQynM",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    padded={true}
+  >
+    <div
+      className="sc-bZQynM ezknic"
+    />
+  </StyledComponent>
+</styled.div>
+`;
+
+exports[`matches <Content> snapshot 1`] = `
+<styled.div>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bZQynM",
+          "isStatic": false,
+          "lastClassName": "bcrsui",
+          "rules": Array [
+            "
+        flex: ",
+            [Function],
+            ";
+        overflow: auto;
+        padding: ",
+            [Function],
+            ";
+      ",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bZQynM",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="sc-bZQynM bcrsui"
+    />
+  </StyledComponent>
+</styled.div>
+`;
+
+exports[`matches <Header> snapshot 1`] = `
+<styled.div>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bxivhb",
+          "isStatic": true,
+          "lastClassName": "kRASmB",
+          "rules": Array [
+            "
+        font-size: 1.2rem;
+        font-weight: 100;
+        padding: 0.8rem 1rem;
+        border-bottom: 1px solid #f0f0f0;
+        text-transform: uppercase;
+        flex: auto 0 0;
+        display: flex;
+      ",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bxivhb",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="sc-bxivhb kRASmB"
+    />
+  </StyledComponent>
+</styled.div>
+`;
+
+exports[`matches <HeaderActions> snapshot 1`] = `
+<styled.div>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-EHOje",
+          "isStatic": true,
+          "lastClassName": "eRufog",
+          "rules": Array [
+            "
+        flex: auto 0 0;
+      ",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-EHOje",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="sc-EHOje eRufog"
+    />
+  </StyledComponent>
+</styled.div>
+`;
+
+exports[`matches <HeaderContent> snapshot 1`] = `
+<styled.div>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-ifAKCX",
+          "isStatic": true,
+          "lastClassName": "hHdAva",
+          "rules": Array [
+            "
+        flex: auto 1 1;
+      ",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-ifAKCX",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="sc-ifAKCX hHdAva"
+    />
+  </StyledComponent>
+</styled.div>
+`;
+
+exports[`matches <ListItemStyle> snapshot 1`] = `
+<styled.div>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-jTzLTM",
+          "isStatic": false,
+          "lastClassName": "kuSCQw",
+          "rules": Array [
+            "
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
+        border-bottom: 1px solid #f0f0f0;
+        transition: background-color 0.5s ease;
+        color: #444;
+        box-sizing: border-box;
+        background-color: #fff;
+      
+        &:last-child {
+          border: 0;
+        }
+      
+        &:hover {
+          background-color: ",
+            [Function],
+            ";
+          color: ",
+            [Function],
+            ";
+          cursor: ",
+            [Function],
+            ";
+        }
+      ",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-jTzLTM",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="sc-jTzLTM kuSCQw"
+    />
+  </StyledComponent>
+</styled.div>
+`;
+
+exports[`matches <RowWrapper> snapshot 1`] = `
+<styled.div>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": true,
+          "lastClassName": "gzrIrS",
+          "rules": Array [
+            "
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        overflow: auto;
+      ",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="sc-bdVaJa gzrIrS"
+    />
+  </StyledComponent>
+</styled.div>
+`;
+
+exports[`matches <Wrapper> snapshot 1`] = `
+<Styled(styled.div)>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-htpNat",
+          "isStatic": true,
+          "lastClassName": "dQTXtH",
+          "rules": Array [
+            "
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        overflow: auto;
+      ",
+            "
+        border: 1px solid #f0f0f0;
+        box-sizing: border-box;
+        overflow: hidden;
+        height: 100%;
+      ",
+          ],
+        },
+        "displayName": "Styled(styled.div)",
+        "foldedComponentIds": Array [
+          "sc-bwzfXH",
+        ],
+        "render": [Function],
+        "styledComponentId": "sc-htpNat",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="sc-bwzfXH sc-htpNat dQTXtH"
+    />
+  </StyledComponent>
+</Styled(styled.div)>
+`;

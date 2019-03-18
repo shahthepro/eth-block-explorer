@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches <Subtitle> snapshot 1`] = `
+<styled.h2>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bwzfXH",
+          "isStatic": true,
+          "lastClassName": "QULuE",
+          "rules": Array [
+            "
+        font-weight: 100;
+        margin: 0;
+        padding-bottom: 1rem;
+      ",
+          ],
+        },
+        "displayName": "styled.h2",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bwzfXH",
+        "target": "h2",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <h2
+      className="sc-bwzfXH QULuE"
+    />
+  </StyledComponent>
+</styled.h2>
+`;
+
+exports[`matches <Title> snapshot 1`] = `
+<styled.h1>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": false,
+          "lastClassName": "gkfbEN",
+          "rules": Array [
+            "
+        font-weight: 100;
+        margin: 0;
+        padding-bottom: 1rem;
+        text-align: ",
+            [Function],
+            ";
+      ",
+          ],
+        },
+        "displayName": "styled.h1",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "h1",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <h1
+      className="sc-bdVaJa gkfbEN"
+    />
+  </StyledComponent>
+</styled.h1>
+`;

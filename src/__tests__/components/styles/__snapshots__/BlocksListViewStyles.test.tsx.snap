@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches <BlocksListViewItem> snapshot 1`] = `
+<Styled(styled.div)>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-fjdhpX",
+          "isStatic": false,
+          "lastClassName": "bTyIGf",
+          "rules": Array [
+            "
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
+        border-bottom: 1px solid #f0f0f0;
+        transition: background-color 0.5s ease;
+        color: #444;
+        box-sizing: border-box;
+        background-color: #fff;
+      
+        &:last-child {
+          border: 0;
+        }
+      
+        &:hover {
+          background-color: ",
+            [Function],
+            ";
+          color: ",
+            [Function],
+            ";
+          cursor: ",
+            [Function],
+            ";
+        }
+      ",
+            "
+        .block-number {
+          color: #3498db;
+        }
+      
+        .timestamp {
+          color: #77788f;
+          font-size: 0.7rem;
+        }
+      ",
+          ],
+        },
+        "displayName": "Styled(styled.div)",
+        "foldedComponentIds": Array [
+          "sc-jTzLTM",
+        ],
+        "render": [Function],
+        "styledComponentId": "sc-fjdhpX",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="sc-jTzLTM sc-fjdhpX bTyIGf"
+    />
+  </StyledComponent>
+</Styled(styled.div)>
+`;

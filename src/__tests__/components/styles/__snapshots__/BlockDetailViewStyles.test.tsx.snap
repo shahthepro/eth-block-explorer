@@ -1,0 +1,224 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches <BlockDetailsRow> snapshot 1`] = `
+<styled.div>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-cSHVUG",
+          "isStatic": true,
+          "lastClassName": "fMLWXv",
+          "rules": Array [
+            "
+        width: 100%;
+        border-bottom: 1px solid #f0f0f0;
+        &:last-child {
+          border: 0;
+        }
+      ",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-cSHVUG",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="sc-cSHVUG fMLWXv"
+    />
+  </StyledComponent>
+</styled.div>
+`;
+
+exports[`matches <BlockDetailsWrapper> snapshot 1`] = `
+<Styled(styled.div)>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-fjdhpX",
+          "isStatic": true,
+          "lastClassName": "eXyvVf",
+          "rules": Array [
+            "
+        width: 100%;
+        border: 1px solid #f0f0f0;
+      ",
+            "
+        overflow-y: auto;
+        max-height: 140px;
+      ",
+          ],
+        },
+        "displayName": "Styled(styled.div)",
+        "foldedComponentIds": Array [
+          "sc-VigVT",
+        ],
+        "render": [Function],
+        "styledComponentId": "sc-fjdhpX",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="sc-VigVT sc-fjdhpX eXyvVf"
+    />
+  </StyledComponent>
+</Styled(styled.div)>
+`;
+
+exports[`matches <TransactionsListItem> snapshot 1`] = `
+<Styled(styled.div)>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-kAzzGY",
+          "isStatic": false,
+          "lastClassName": "jTPYbN",
+          "rules": Array [
+            "
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
+        border-bottom: 1px solid #f0f0f0;
+        transition: background-color 0.5s ease;
+        color: #444;
+        box-sizing: border-box;
+        background-color: #fff;
+      
+        &:last-child {
+          border: 0;
+        }
+      
+        &:hover {
+          background-color: ",
+            [Function],
+            ";
+          color: ",
+            [Function],
+            ";
+          cursor: ",
+            [Function],
+            ";
+        }
+      ",
+            "
+        padding: 0.8rem 1rem;
+        color: ",
+            [Function],
+            ";
+      
+        .dropdown-arrow {
+          height: 16px;
+          transition: transform 0.3s ease;
+          transform: rotateX(",
+            [Function],
+            "deg);
+        }
+        .expanded-view {
+          ",
+            [Function],
+            "
+          transition: height 0.3s ease, margin 0.3s ease;
+          height: ",
+            [Function],
+            ";
+          background-color: #fff;
+          color: #000;
+          margin: ",
+            [Function],
+            ";
+        }
+        &:hover {
+          cursor: pointer;
+          background-color: #fff;
+        }
+        &:hover .expanded-view {
+          cursor: auto;
+          background-color: #fff;
+          color: #000;
+        }
+      ",
+          ],
+        },
+        "displayName": "Styled(styled.div)",
+        "foldedComponentIds": Array [
+          "sc-jTzLTM",
+        ],
+        "render": [Function],
+        "styledComponentId": "sc-kAzzGY",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="sc-jTzLTM sc-kAzzGY jTPYbN"
+    />
+  </StyledComponent>
+</Styled(styled.div)>
+`;
+
+exports[`matches <TransactionsListWrapper> snapshot 1`] = `
+<Styled(styled.div)>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-jzJRlG",
+          "isStatic": true,
+          "lastClassName": "cZhRJb",
+          "rules": Array [
+            "
+        width: 100%;
+        border: 1px solid #f0f0f0;
+      ",
+            "
+        overflow-y: auto;
+        height: 100%;
+      ",
+          ],
+        },
+        "displayName": "Styled(styled.div)",
+        "foldedComponentIds": Array [
+          "sc-VigVT",
+        ],
+        "render": [Function],
+        "styledComponentId": "sc-jzJRlG",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="sc-VigVT sc-jzJRlG cZhRJb"
+    />
+  </StyledComponent>
+</Styled(styled.div)>
+`;
