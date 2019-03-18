@@ -25,7 +25,7 @@ export interface IWalletState {
   isBlocksLoading: boolean,
   latestBlocks?: IBlock[],
 
-  getTransactionsFromBlock?(blockNumber: number): Promise<Transaction[]>,
+  getTransactionsFromBlock?(blockNumber: number): Promise<ITransaction[]>,
 };
 
 export interface IBlock {
@@ -36,6 +36,11 @@ export interface IBlock {
   miner: String,
   gasLimit: Number,
   // difficulty: Number,
+}
+
+export interface ITransaction extends Transaction {
+  input?: string,
+  data?: string
 }
 
 export interface IBlockSubscriptionResponse {

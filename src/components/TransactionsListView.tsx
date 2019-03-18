@@ -1,16 +1,16 @@
 import * as React from 'react';
-import { Transaction } from 'web3-core/types';
 import * as PropTypes from 'prop-types';
 import { TransactionsListWrapper, BlockDetailsRow, TransactionsListItem, BlockDetailsWrapper } from './styles/BlockDetailViewStyles';
 import { RowWrapper, HeaderContent, HeaderActions, ColumnOneFifth, ColumnFourFifth } from './styles/ContentStyles';
 import dropdown from 'src/res/dropdown.svg';
+import { ITransaction } from 'src/types';
 
 interface ITransactionsListViewProps {
-  transactions: Transaction[],
+  transactions: ITransaction[],
 }
 
 interface ITransactionsListViewState {
-  selectedItem?: Transaction,
+  selectedItem?: ITransaction,
 }
 
 class TransactionsListView extends React.Component<ITransactionsListViewProps, ITransactionsListViewState> {
@@ -22,8 +22,8 @@ class TransactionsListView extends React.Component<ITransactionsListViewProps, I
     selectedItem: undefined
   }
 
-  toggleTxRow = (tx: Transaction, _: any) => {
-    if (this.state.selectedItem !== undefined && (this.state.selectedItem! as Transaction).hash == tx.hash) {
+  toggleTxRow = (tx: ITransaction, _: any) => {
+    if (this.state.selectedItem !== undefined && (this.state.selectedItem! as ITransaction).hash == tx.hash) {
       // Already selected, so toggle view
       this.setState({
         selectedItem: undefined
@@ -47,8 +47,8 @@ class TransactionsListView extends React.Component<ITransactionsListViewProps, I
             </BlockDetailsRow>
           }
           {
-            transactions.map((tx: Transaction) => {
-              const isExpanded = selectedItem ? (selectedItem! as Transaction).hash === tx.hash : false;
+            transactions.map((tx: ITransaction) => {
+              const isExpanded = selectedItem ? (selectedItem! as ITransaction).hash === tx.hash : false;
               return <BlockDetailsRow key={tx.hash}>
                 <TransactionsListItem expanded={ isExpanded } onClick={(e: any) => this.toggleTxRow(tx, e)}>
                   <div>
@@ -68,7 +68,7 @@ class TransactionsListView extends React.Component<ITransactionsListViewProps, I
                     </BlockDetailsRow>
                     <BlockDetailsRow>
                       <ColumnOneFifth>Ether sent</ColumnOneFifth>
-                      <ColumnFourFifth>{tx.value}</ColumnFourFifth>
+                      <ColumnFourFifth>{tx.value} Ether</ColumnFourFifth>
                     </BlockDetailsRow>
                     <BlockDetailsRow>
                       <ColumnOneFifth>Gas Used</ColumnOneFifth>
@@ -76,7 +76,7 @@ class TransactionsListView extends React.Component<ITransactionsListViewProps, I
                     </BlockDetailsRow>
                     <BlockDetailsRow>
                       <ColumnOneFifth>Gas Price</ColumnOneFifth>
-                      <ColumnFourFifth>{tx.gasPrice}</ColumnFourFifth>
+                      <ColumnFourFifth>{tx.gasPrice} Gwei</ColumnFourFifth>
                     </BlockDetailsRow>
                 </BlockDetailsWrapper>
                 </TransactionsListItem>

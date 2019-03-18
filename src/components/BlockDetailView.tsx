@@ -1,7 +1,6 @@
 import * as React from 'react';
-import { IWalletState, IBlock } from 'src/types';
+import { IWalletState, IBlock, ITransaction } from 'src/types';
 import * as PropTypes from 'prop-types';
-import { Transaction } from 'web3-core/types';
 import { Wrapper, Header, HeaderContent, HeaderActions, Content } from './styles/ContentStyles';
 import { LinkButton } from './styles/Buttons';
 import ProgressSpinner from './ProgressSpinner';
@@ -16,7 +15,7 @@ interface IBlockDetailViewProps {
 
 interface IBlockDetailViewState {
   loading: boolean,
-  transactions: Transaction[]
+  transactions: ITransaction[]
 }
 
 class BlockDetailView extends React.Component<IBlockDetailViewProps, IBlockDetailViewState> {
