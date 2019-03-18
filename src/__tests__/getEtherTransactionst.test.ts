@@ -1,9 +1,8 @@
 jest.mock('web3', () => ({}));
 
-
 import getEtherTransactions from "../lib/getEtherTransactions";
 
-it('should get ether transaction from a block', async () => {
+it('should get ether transactions from a block', async () => {
   const fakeWeb3 = () => {
     return {
       eth: {
