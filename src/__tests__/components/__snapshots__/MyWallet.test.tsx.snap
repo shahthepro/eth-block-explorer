@@ -1,0 +1,266 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches <MyWallet wallet={isConnected: false}> snapshot 1`] = `
+<MyWallet
+  wallet={
+    Object {
+      "isConnected": false,
+    }
+  }
+/>
+`;
+
+exports[`matches <MyWallet wallet={isConnected: true}> snapshot 1`] = `
+<MyWallet
+  wallet={
+    Object {
+      "address": "1234567890abcdef",
+      "connect": [Function],
+      "disconnect": [Function],
+      "isConnected": true,
+      "isConnecting": false,
+      "networkId": 1,
+    }
+  }
+>
+  <Styled(styled.div)>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": true,
+            "lastClassName": "dQTXtH",
+            "rules": Array [
+              "
+          display: flex;
+          flex-direction: column;
+          box-sizing: border-box;
+          overflow: auto;
+        ",
+              "
+          border: 1px solid #f0f0f0;
+          box-sizing: border-box;
+          overflow: hidden;
+          height: 100%;
+        ",
+            ],
+          },
+          "displayName": "Styled(styled.div)",
+          "foldedComponentIds": Array [
+            "sc-bwzfXH",
+          ],
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="sc-bwzfXH sc-htpNat dQTXtH"
+      >
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bxivhb",
+                  "isStatic": true,
+                  "lastClassName": "kRASmB",
+                  "rules": Array [
+                    "
+                font-size: 1.2rem;
+                font-weight: 100;
+                padding: 0.8rem 1rem;
+                border-bottom: 1px solid #f0f0f0;
+                text-transform: uppercase;
+                flex: auto 0 0;
+                display: flex;
+              ",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bxivhb",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="sc-bxivhb kRASmB"
+            >
+              My Wallet
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.div
+          padded={true}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "ezknic",
+                  "rules": Array [
+                    "
+                flex: ",
+                    [Function],
+                    ";
+                overflow: auto;
+                padding: ",
+                    [Function],
+                    ";
+              ",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            padded={true}
+          >
+            <div
+              className="sc-bZQynM ezknic"
+            >
+              <styled.h2>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-jzJRlG",
+                        "isStatic": true,
+                        "lastClassName": "boNWI",
+                        "rules": Array [
+                          "
+                      font-weight: 100;
+                      margin: 0;
+                      padding-bottom: 1rem;
+                    ",
+                        ],
+                      },
+                      "displayName": "styled.h2",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-jzJRlG",
+                      "target": "h2",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <h2
+                    className="sc-jzJRlG boNWI"
+                  >
+                    You are connected to 
+                    Mainnet
+                     network with the wallet address 
+                    <em>
+                      1234567890abcdef
+                    </em>
+                  </h2>
+                </StyledComponent>
+              </styled.h2>
+              <Styled(styled.button)
+                disabled={false}
+                onClick={[Function]}
+              >
+                <StyledComponent
+                  disabled={false}
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-kgoBCf",
+                        "isStatic": false,
+                        "lastClassName": "kRyHdK",
+                        "rules": Array [
+                          "
+                      background-color: rgba(0, 122, 255, 1);
+                      color: #fff;
+                      border: 0;
+                      padding: ",
+                          [Function],
+                          ";
+                      font-size: ",
+                          [Function],
+                          ";
+                      cursor: pointer;
+                    
+                      &:hover {
+                        background-color: rgba(0, 122, 255, 0.8);
+                      }
+                    
+                      &:disabled {
+                        background-color: #ccc;
+                        color: #888;
+                      }
+                    ",
+                          "
+                      background-color: rgba(255, 122, 0, 1);
+                      &:hover {
+                        background-color: rgba(255, 122, 0, 0.8);
+                      }
+                    ",
+                        ],
+                      },
+                      "displayName": "Styled(styled.button)",
+                      "foldedComponentIds": Array [
+                        "sc-cSHVUG",
+                      ],
+                      "render": [Function],
+                      "styledComponentId": "sc-kgoBCf",
+                      "target": "button",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  onClick={[Function]}
+                >
+                  <button
+                    className="sc-cSHVUG sc-kgoBCf kRyHdK"
+                    disabled={false}
+                    onClick={[Function]}
+                  >
+                    Disconnect Wallet
+                  </button>
+                </StyledComponent>
+              </Styled(styled.button)>
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
+  </Styled(styled.div)>
+</MyWallet>
+`;
