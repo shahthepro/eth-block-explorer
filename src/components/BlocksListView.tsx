@@ -22,7 +22,7 @@ const BlocksListViewItems = ({ loading, blocks, onItemClick }: IBlocksListViewPr
 
   if (!blocks || blocks.length == 0) {
     return <Content>
-      <BlocksListViewItem className="non-clickable">No blocks found</BlocksListViewItem>
+      <BlocksListViewItem nonClickable>No blocks found</BlocksListViewItem>
     </Content>;
   }
   return (
