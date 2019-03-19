@@ -3,7 +3,7 @@ import { IBlock } from './../types';
 import * as PropTypes from 'prop-types';
 import { BlockDetailsWrapper, BlockDetailsRow } from './styles/BlockDetailViewStyles';
 import { ColumnOneFifth, ColumnFourFifth } from './styles/ContentStyles';
-import *  as moment from 'moment';
+import moment from 'moment';
 
 interface IBlockSummaryProps {
   block: IBlock

@@ -6,8 +6,8 @@ import {
   MasterDetailWrapper,
 } from './../../../components/styles/MasterDetailStyles';
 import * as Enzyme from 'enzyme';
-import * as Adapter from 'enzyme-adapter-react-16';
-import mountAndMatchSnapshotHOF from '../../../../mountAndMatchSnapshotHOF';
+import Adapter from 'enzyme-adapter-react-16';
+import mountAndMatchSnapshotHOF from '../../../mountAndMatchSnapshotHOF';
 
 Enzyme.configure({ adapter: new Adapter() })
 const { mount } = Enzyme;

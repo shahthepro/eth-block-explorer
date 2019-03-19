@@ -2,7 +2,7 @@ import { Observable, ReplaySubject, concat } from 'rxjs';
 import { scan } from 'rxjs/operators';
 import Web3 from 'web3';
 import { IBlockSubscriptionResponse, IBlockHeaderSubscriptionResponse, IBlock } from './../types';
-import { Subscribe } from 'web3-eth/types';
+import { Subscribe } from 'web3/types';
 
 /**
  * Returns a Observable stream of recent blocks and a method to unsubscribe from the stream

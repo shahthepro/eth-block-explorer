@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
-import * as moment from 'moment';
+import moment from 'moment';
 import { IBlock } from './../types';
 import {
   BlocksListViewItem,

@@ -1,8 +1,7 @@
-import Web3 from 'web3';
-import 'typeface-roboto';
 import { Observable } from 'rxjs';
-import { Subscribe } from 'web3-eth/types';
-import { Transaction } from 'web3-core/types';
+import { Subscribe } from 'web3/types';
+// @ts-ignore
+import Web3 from 'web3';
 
 export interface IWalletConnectedResponse {
   address: String,
@@ -38,8 +37,18 @@ export interface IBlock {
   // difficulty: Number,
 }
 
-export interface ITransaction extends Transaction {
-  input?: string,
+export interface ITransaction {
+  nonce: string|number,
+  gasPrice: string|number,
+  gas: string|number,
+  from: string,
+  to: string,
+  value: string|number,
+  input: string,
+  v?: string,
+  r?: string,
+  s?: string,
+  hash: string,
   data?: string
 }
 
