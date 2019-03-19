@@ -56,6 +56,7 @@ class BlockExplorer extends React.Component<IBlockExplorerProps, IBlockExplorerS
 
         masterSlot={
           <BlocksListView 
+            selectedBlock={selectedItem!}
             blocks={wallet.latestBlocks!} 
             loading={wallet.isBlocksLoading} 
             onItemClick={this.onBlockSelected}

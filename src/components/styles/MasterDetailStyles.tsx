@@ -6,8 +6,9 @@ const MasterDetailWrapper = styled.div`
   display: flex;
   flex-direction: row;
   background-color: #fff;
+  transition: height 0.3s ease;
   &.limit-height {
-    max-height: 580px;
+    max-height: 549px;
   }
   &.auto-height {
     height: auto;

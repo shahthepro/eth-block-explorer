@@ -40,6 +40,12 @@ const LinkButton = styled(ButtonStyle)`
     background-color: transparent;
     color: rgba(0, 122, 255, 0.8);    
   }
+
+  &:disabled {
+    cursor: default;
+    background-color: transparent;
+    color: rgba(122, 122, 122, 1);
+  }
 `;
 
 const SecondaryButton = styled(ButtonStyle)`

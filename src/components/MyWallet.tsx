@@ -2,9 +2,9 @@ import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import { IWalletState } from './../types';
 import { Wrapper, Header, Content } from './styles/ContentStyles';
-import { Subtitle } from './styles/Typography';
-import { SecondaryButton } from './styles/Buttons';
+import { SecondaryButton, LinkButton } from './styles/Buttons';
 import getNetworkName from './../lib/getNetworkName';
+import { InfoMessage } from './styles/ErrorStyles';
 
 interface IMyWalletProps {
   wallet: IWalletState
@@ -20,9 +20,9 @@ const MyWallet = function (props: IMyWalletProps) {
   return <Wrapper>
     <Header>My Wallet</Header>
     <Content padded>
-        <Subtitle>
-          You are connected to {getNetworkName(wallet.networkId!.valueOf())} network with the wallet address <em>{wallet.address}</em>
-        </Subtitle>
+        <InfoMessage>
+          <p>You are connected to <LinkButton disabled>{getNetworkName(wallet.networkId!.valueOf())} network</LinkButton>.</p><br/><p>Your wallet address is <LinkButton disabled><em>{wallet.address}</em></LinkButton></p>
+        </InfoMessage>
         <SecondaryButton onClick={wallet.disconnect} disabled={!wallet.isConnected && !wallet.isConnecting}>Disconnect Wallet</SecondaryButton> 
     </Content>
   </Wrapper>

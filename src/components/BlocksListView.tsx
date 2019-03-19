@@ -12,10 +12,11 @@ interface IBlocksListViewProps {
   loading: boolean
   blocks: IBlock[]
   header: String
+  selectedBlock?: IBlock
   onItemClick(block: IBlock, event: any): void
 };
 
-const BlocksListViewItems = ({ loading, blocks, onItemClick }: IBlocksListViewProps) => {
+const BlocksListViewItems = ({ loading, blocks, onItemClick, selectedBlock }: IBlocksListViewProps) => {
   if (loading) {
     return <ProgressSpinner />;
   }
@@ -30,6 +31,7 @@ const BlocksListViewItems = ({ loading, blocks, onItemClick }: IBlocksListViewPr
       {
         blocks.map(block => (
           <BlocksListViewItem
+            selected={selectedBlock && selectedBlock.number == block.number}
             onClick={(e) => { onItemClick && onItemClick(block, e); } }
             key={block.number.valueOf()}
           >
