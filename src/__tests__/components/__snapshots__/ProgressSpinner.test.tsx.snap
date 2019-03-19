@@ -38,7 +38,9 @@ exports[`matches <ProgressSpinner> snapshot 1`] = `
       <div
         className="sc-bdVaJa dTWIfT"
       >
-        <img />
+        <img
+          src="spinner.gif"
+        />
       </div>
     </StyledComponent>
   </styled.div>
