@@ -3,6 +3,13 @@ A simple block explorer for Ethereum-based networks. Uses RxJS, Styled Component
 
 [Live Demo: https://shahthepro.github.io/eth-block-explorer](https://shahthepro.github.io/eth-block-explorer)
 
+## Stack
+### RxJS
+RxJS is used to create an observable stream of recent and new blocks.
+
+### Styled Components
+Used to create reusable components.
+
 ## Running on local machine
 1. Clone the repository
     ```
@@ -10,11 +17,11 @@ A simple block explorer for Ethereum-based networks. Uses RxJS, Styled Component
     ```
 2. Install dependencies
     ```
-    yarn
+    $ yarn
     ```
 3. Start webpack dev server
     ```
-    yarn start
+    $ yarn start
     ```
 
 ## Running tests
