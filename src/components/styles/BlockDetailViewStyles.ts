@@ -27,6 +27,7 @@ interface ITransactionsListItemProps {
 const TransactionsListItem = styled(ListItemStyle)<ITransactionsListItemProps>`
   padding: 0.8rem 1rem;
   color: ${props => props.expanded ? '#000' : '#444'};
+  overflow: hidden;
 
   .dropdown-arrow {
     height: 16px;
@@ -35,11 +36,12 @@ const TransactionsListItem = styled(ListItemStyle)<ITransactionsListItemProps>`
   }
   .expanded-view {
     ${props => props.expanded ? '' : 'border: 0;'}
-    transition: height 0.3s ease, margin 0.3s ease;
+    transition: height 0.3s ease, margin 0.3s ease, opacity 0.3s ease;
     height: ${props => props.expanded ? 'auto' : '0px'};
     background-color: #fff;
     color: #000;
     margin: ${props => props.expanded ? '10px 0' : '0' };
+    opacity: ${props => props.expanded ? '1' : '0' };
   }
   &:hover {
     cursor: pointer;

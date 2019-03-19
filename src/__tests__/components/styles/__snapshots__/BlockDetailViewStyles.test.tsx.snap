@@ -93,7 +93,7 @@ exports[`matches <TransactionsListItem> snapshot 1`] = `
         "componentStyle": ComponentStyle {
           "componentId": "sc-kAzzGY",
           "isStatic": false,
-          "lastClassName": "jTPYbN",
+          "lastClassName": "PQBFf",
           "rules": Array [
             "
         font-size: 1rem;
@@ -125,6 +125,7 @@ exports[`matches <TransactionsListItem> snapshot 1`] = `
         color: ",
             [Function],
             ";
+        overflow: hidden;
       
         .dropdown-arrow {
           height: 16px;
@@ -137,13 +138,16 @@ exports[`matches <TransactionsListItem> snapshot 1`] = `
           ",
             [Function],
             "
-          transition: height 0.3s ease, margin 0.3s ease;
+          transition: height 0.3s ease, margin 0.3s ease, opacity 0.3s ease;
           height: ",
             [Function],
             ";
           background-color: #fff;
           color: #000;
           margin: ",
+            [Function],
+            ";
+          opacity: ",
             [Function],
             ";
         }
@@ -174,7 +178,7 @@ exports[`matches <TransactionsListItem> snapshot 1`] = `
     forwardedRef={null}
   >
     <div
-      className="sc-jTzLTM sc-kAzzGY jTPYbN"
+      className="sc-jTzLTM sc-kAzzGY PQBFf"
     />
   </StyledComponent>
 </Styled(styled.div)>

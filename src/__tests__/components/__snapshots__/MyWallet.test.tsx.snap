@@ -123,7 +123,9 @@ exports[`matches <MyWallet wallet={isConnected: true}> snapshot 1`] = `
                 flex: ",
                     [Function],
                     ";
-                overflow: auto;
+                overflow: ",
+                    [Function],
+                    ";
                 padding: ",
                     [Function],
                     ";

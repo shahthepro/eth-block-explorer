@@ -58,7 +58,7 @@ class BlockDetailView extends React.Component<IBlockDetailViewProps, IBlockDetai
         <BlockSummary block={block} />
       </Content>
       <Header>Transactions { !loading ? `(${transactions.length})` : '' }</Header>
-      <Content padded>
+      <Content padded noScroll>
         { loading && <ProgressSpinner /> }
         { !loading && <TransactionsListView transactions={transactions} /> }
       </Content>

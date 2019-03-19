@@ -42,11 +42,12 @@ const HeaderActions = styled.div`
 interface IContentProps {
   padded?: boolean,
   fixedSize?: boolean
+  noScroll?: boolean
 }
 
 const Content = styled.div<IContentProps>`
   flex: ${props => props.fixedSize ? 'auto 0 0' : ' auto 1 1'};
-  overflow: auto;
+  overflow: ${props => props.noScroll ? 'hidden' : 'auto'};
   padding: ${props => props.padded ? '1rem' : 0};
 `;
 

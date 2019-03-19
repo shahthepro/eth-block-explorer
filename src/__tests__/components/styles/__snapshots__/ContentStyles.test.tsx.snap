@@ -310,7 +310,9 @@ exports[`matches <Content fixedSize> snapshot 1`] = `
         flex: ",
             [Function],
             ";
-        overflow: auto;
+        overflow: ",
+            [Function],
+            ";
         padding: ",
             [Function],
             ";
@@ -356,7 +358,9 @@ exports[`matches <Content padded fixedSize> snapshot 1`] = `
         flex: ",
             [Function],
             ";
-        overflow: auto;
+        overflow: ",
+            [Function],
+            ";
         padding: ",
             [Function],
             ";
@@ -401,7 +405,9 @@ exports[`matches <Content padded> snapshot 1`] = `
         flex: ",
             [Function],
             ";
-        overflow: auto;
+        overflow: ",
+            [Function],
+            ";
         padding: ",
             [Function],
             ";
@@ -444,7 +450,9 @@ exports[`matches <Content> snapshot 1`] = `
         flex: ",
             [Function],
             ";
-        overflow: auto;
+        overflow: ",
+            [Function],
+            ";
         padding: ",
             [Function],
             ";

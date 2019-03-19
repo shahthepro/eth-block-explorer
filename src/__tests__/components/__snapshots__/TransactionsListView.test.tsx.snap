@@ -6,19 +6,19 @@ exports[`matches <MyWallet transactions={...}> snapshot 1`] = `
     Array [
       Object {
         "from": "0x2",
-        "gas": 100,
+        "gas": "100",
         "gasPrice": "1000",
         "hash": "0x1",
         "to": "0x3",
-        "value": 10,
+        "value": "10",
       },
       Object {
         "from": "0x6",
-        "gas": 200,
+        "gas": "200",
         "gasPrice": "2000",
         "hash": "0x4",
         "to": "0x5",
-        "value": 20,
+        "value": "20",
       },
     ]
   }
@@ -111,7 +111,7 @@ exports[`matches <MyWallet transactions={...}> snapshot 1`] = `
                       "componentStyle": ComponentStyle {
                         "componentId": "sc-kAzzGY",
                         "isStatic": false,
-                        "lastClassName": "jTPYbN",
+                        "lastClassName": "PQBFf",
                         "rules": Array [
                           "
                       font-size: 1rem;
@@ -143,6 +143,7 @@ exports[`matches <MyWallet transactions={...}> snapshot 1`] = `
                       color: ",
                           [Function],
                           ";
+                      overflow: hidden;
                     
                       .dropdown-arrow {
                         height: 16px;
@@ -155,13 +156,16 @@ exports[`matches <MyWallet transactions={...}> snapshot 1`] = `
                         ",
                           [Function],
                           "
-                        transition: height 0.3s ease, margin 0.3s ease;
+                        transition: height 0.3s ease, margin 0.3s ease, opacity 0.3s ease;
                         height: ",
                           [Function],
                           ";
                         background-color: #fff;
                         color: #000;
                         margin: ",
+                          [Function],
+                          ";
+                        opacity: ",
                           [Function],
                           ";
                       }
@@ -193,7 +197,7 @@ exports[`matches <MyWallet transactions={...}> snapshot 1`] = `
                   onClick={[Function]}
                 >
                   <div
-                    className="sc-jTzLTM sc-kAzzGY jTPYbN"
+                    className="sc-jTzLTM sc-kAzzGY PQBFf"
                     onClick={[Function]}
                   >
                     <div>
@@ -302,6 +306,7 @@ exports[`matches <MyWallet transactions={...}> snapshot 1`] = `
                                 >
                                   <img
                                     className="dropdown-arrow"
+                                    src="dropdown.svg"
                                   />
                                 </div>
                               </StyledComponent>
@@ -310,7 +315,7 @@ exports[`matches <MyWallet transactions={...}> snapshot 1`] = `
                         </StyledComponent>
                       </styled.div>
                     </div>
-                    <Styled(styled.div)
+                    <styled.div
                       className="expanded-view"
                       onClick={[Function]}
                     >
@@ -321,26 +326,20 @@ exports[`matches <MyWallet transactions={...}> snapshot 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-fjdhpX",
+                              "componentId": "sc-VigVT",
                               "isStatic": true,
-                              "lastClassName": "eXyvVf",
+                              "lastClassName": "fvMnZc",
                               "rules": Array [
                                 "
                             width: 100%;
                             border: 1px solid #f0f0f0;
                           ",
-                                "
-                            overflow-y: auto;
-                            max-height: 140px;
-                          ",
                               ],
                             },
-                            "displayName": "Styled(styled.div)",
-                            "foldedComponentIds": Array [
-                              "sc-VigVT",
-                            ],
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-fjdhpX",
+                            "styledComponentId": "sc-VigVT",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -351,7 +350,7 @@ exports[`matches <MyWallet transactions={...}> snapshot 1`] = `
                         onClick={[Function]}
                       >
                         <div
-                          className="sc-VigVT expanded-view sc-fjdhpX eXyvVf"
+                          className="expanded-view sc-VigVT fvMnZc"
                           onClick={[Function]}
                         >
                           <styled.div>
@@ -968,7 +967,7 @@ exports[`matches <MyWallet transactions={...}> snapshot 1`] = `
                           </styled.div>
                         </div>
                       </StyledComponent>
-                    </Styled(styled.div)>
+                    </styled.div>
                   </div>
                 </StyledComponent>
               </Styled(styled.div)>
@@ -1025,7 +1024,7 @@ exports[`matches <MyWallet transactions={...}> snapshot 1`] = `
                       "componentStyle": ComponentStyle {
                         "componentId": "sc-kAzzGY",
                         "isStatic": false,
-                        "lastClassName": "jTPYbN",
+                        "lastClassName": "PQBFf",
                         "rules": Array [
                           "
                       font-size: 1rem;
@@ -1057,6 +1056,7 @@ exports[`matches <MyWallet transactions={...}> snapshot 1`] = `
                       color: ",
                           [Function],
                           ";
+                      overflow: hidden;
                     
                       .dropdown-arrow {
                         height: 16px;
@@ -1069,13 +1069,16 @@ exports[`matches <MyWallet transactions={...}> snapshot 1`] = `
                         ",
                           [Function],
                           "
-                        transition: height 0.3s ease, margin 0.3s ease;
+                        transition: height 0.3s ease, margin 0.3s ease, opacity 0.3s ease;
                         height: ",
                           [Function],
                           ";
                         background-color: #fff;
                         color: #000;
                         margin: ",
+                          [Function],
+                          ";
+                        opacity: ",
                           [Function],
                           ";
                       }
@@ -1107,7 +1110,7 @@ exports[`matches <MyWallet transactions={...}> snapshot 1`] = `
                   onClick={[Function]}
                 >
                   <div
-                    className="sc-jTzLTM sc-kAzzGY jTPYbN"
+                    className="sc-jTzLTM sc-kAzzGY PQBFf"
                     onClick={[Function]}
                   >
                     <div>
@@ -1216,6 +1219,7 @@ exports[`matches <MyWallet transactions={...}> snapshot 1`] = `
                                 >
                                   <img
                                     className="dropdown-arrow"
+                                    src="dropdown.svg"
                                   />
                                 </div>
                               </StyledComponent>
@@ -1224,7 +1228,7 @@ exports[`matches <MyWallet transactions={...}> snapshot 1`] = `
                         </StyledComponent>
                       </styled.div>
                     </div>
-                    <Styled(styled.div)
+                    <styled.div
                       className="expanded-view"
                       onClick={[Function]}
                     >
@@ -1235,26 +1239,20 @@ exports[`matches <MyWallet transactions={...}> snapshot 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-fjdhpX",
+                              "componentId": "sc-VigVT",
                               "isStatic": true,
-                              "lastClassName": "eXyvVf",
+                              "lastClassName": "fvMnZc",
                               "rules": Array [
                                 "
                             width: 100%;
                             border: 1px solid #f0f0f0;
                           ",
-                                "
-                            overflow-y: auto;
-                            max-height: 140px;
-                          ",
                               ],
                             },
-                            "displayName": "Styled(styled.div)",
-                            "foldedComponentIds": Array [
-                              "sc-VigVT",
-                            ],
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-fjdhpX",
+                            "styledComponentId": "sc-VigVT",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -1265,7 +1263,7 @@ exports[`matches <MyWallet transactions={...}> snapshot 1`] = `
                         onClick={[Function]}
                       >
                         <div
-                          className="sc-VigVT expanded-view sc-fjdhpX eXyvVf"
+                          className="expanded-view sc-VigVT fvMnZc"
                           onClick={[Function]}
                         >
                           <styled.div>
@@ -1882,7 +1880,7 @@ exports[`matches <MyWallet transactions={...}> snapshot 1`] = `
                           </styled.div>
                         </div>
                       </StyledComponent>
-                    </Styled(styled.div)>
+                    </styled.div>
                   </div>
                 </StyledComponent>
               </Styled(styled.div)>
@@ -1981,7 +1979,7 @@ exports[`matches <MyWallet transactions={[]}> snapshot 1`] = `
                       "componentStyle": ComponentStyle {
                         "componentId": "sc-kAzzGY",
                         "isStatic": false,
-                        "lastClassName": "jTPYbN",
+                        "lastClassName": "PQBFf",
                         "rules": Array [
                           "
                       font-size: 1rem;
@@ -2013,6 +2011,7 @@ exports[`matches <MyWallet transactions={[]}> snapshot 1`] = `
                       color: ",
                           [Function],
                           ";
+                      overflow: hidden;
                     
                       .dropdown-arrow {
                         height: 16px;
@@ -2025,13 +2024,16 @@ exports[`matches <MyWallet transactions={[]}> snapshot 1`] = `
                         ",
                           [Function],
                           "
-                        transition: height 0.3s ease, margin 0.3s ease;
+                        transition: height 0.3s ease, margin 0.3s ease, opacity 0.3s ease;
                         height: ",
                           [Function],
                           ";
                         background-color: #fff;
                         color: #000;
                         margin: ",
+                          [Function],
+                          ";
+                        opacity: ",
                           [Function],
                           ";
                       }
@@ -2062,7 +2064,7 @@ exports[`matches <MyWallet transactions={[]}> snapshot 1`] = `
                   forwardedRef={null}
                 >
                   <div
-                    className="sc-jTzLTM sc-kAzzGY jTPYbN"
+                    className="sc-jTzLTM sc-kAzzGY PQBFf"
                   >
                     There are no ether transactions
                   </div>

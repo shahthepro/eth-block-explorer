@@ -107,7 +107,9 @@ exports[`matches <BlocksListView blocks=[]> snapshot 1`] = `
                   flex: ",
                       [Function],
                       ";
-                  overflow: auto;
+                  overflow: ",
+                      [Function],
+                      ";
                   padding: ",
                       [Function],
                       ";
@@ -354,7 +356,9 @@ exports[`matches <BlocksListView blocks={...}> snapshot 1`] = `
                   flex: ",
                       [Function],
                       ";
-                  overflow: auto;
+                  overflow: ",
+                      [Function],
+                      ";
                   padding: ",
                       [Function],
                       ";
@@ -683,7 +687,9 @@ exports[`matches <BlocksListView loading> snapshot 1`] = `
                 <div
                   className="sc-jzJRlG fXDcDw"
                 >
-                  <img />
+                  <img
+                    src="spinner.gif"
+                  />
                 </div>
               </StyledComponent>
             </styled.div>

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
-import { TransactionsListWrapper, BlockDetailsRow, TransactionsListItem, BlockDetailsWrapper } from './styles/BlockDetailViewStyles';
-import { RowWrapper, HeaderContent, HeaderActions, ColumnOneFifth, ColumnFourFifth } from './styles/ContentStyles';
+import { TransactionsListWrapper, BlockDetailsRow, TransactionsListItem } from './styles/BlockDetailViewStyles';
+import { RowWrapper, HeaderContent, HeaderActions, ColumnOneFifth, ColumnFourFifth, BorderedWrapper } from './styles/ContentStyles';
 import dropdown from './../res/dropdown.svg';
 import { ITransaction } from './../types';
 
@@ -57,7 +57,7 @@ class TransactionsListView extends React.Component<ITransactionsListViewProps, I
                       <HeaderActions><img src={dropdown} className={'dropdown-arrow'} /></HeaderActions>
                     </RowWrapper>
                   </div>
-                  <BlockDetailsWrapper className={'expanded-view'} onClick={e => e.stopPropagation()}>
+                  <BorderedWrapper className={'expanded-view'} onClick={e => e.stopPropagation()}>
                     <BlockDetailsRow>
                       <ColumnOneFifth>Sender</ColumnOneFifth>
                       <ColumnFourFifth>{tx.from}</ColumnFourFifth>
@@ -78,7 +78,7 @@ class TransactionsListView extends React.Component<ITransactionsListViewProps, I
                       <ColumnOneFifth>Gas Price</ColumnOneFifth>
                       <ColumnFourFifth>{tx.gasPrice} Gwei</ColumnFourFifth>
                     </BlockDetailsRow>
-                </BlockDetailsWrapper>
+                </BorderedWrapper>
                 </TransactionsListItem>
               </BlockDetailsRow>;
             })
