@@ -10,11 +10,11 @@ exports[`matches <Subtitle> snapshot 1`] = `
         "componentStyle": ComponentStyle {
           "componentId": "sc-bwzfXH",
           "isStatic": true,
-          "lastClassName": "QULuE",
+          "lastClassName": "fOtEHW",
           "rules": Array [
             "
         font-weight: 100;
-        margin: 0;
+        margin: 0 0 1rem 0;
         padding-bottom: 1rem;
       ",
           ],
@@ -32,7 +32,7 @@ exports[`matches <Subtitle> snapshot 1`] = `
     forwardedRef={null}
   >
     <h2
-      className="sc-bwzfXH QULuE"
+      className="sc-bwzfXH fOtEHW"
     />
   </StyledComponent>
 </styled.h2>
@@ -48,12 +48,12 @@ exports[`matches <Title> snapshot 1`] = `
         "componentStyle": ComponentStyle {
           "componentId": "sc-bdVaJa",
           "isStatic": false,
-          "lastClassName": "gkfbEN",
+          "lastClassName": "jxZOLx",
           "rules": Array [
             "
         font-weight: 100;
         margin: 0;
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
         text-align: ",
             [Function],
             ";
@@ -73,7 +73,7 @@ exports[`matches <Title> snapshot 1`] = `
     forwardedRef={null}
   >
     <h1
-      className="sc-bdVaJa gkfbEN"
+      className="sc-bdVaJa jxZOLx"
     />
   </StyledComponent>
 </styled.h1>

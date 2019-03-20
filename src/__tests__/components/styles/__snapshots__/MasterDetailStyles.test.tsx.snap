@@ -89,7 +89,7 @@ exports[`matches <MasterDetailWrapper> snapshot 1`] = `
         "componentStyle": ComponentStyle {
           "componentId": "sc-bdVaJa",
           "isStatic": true,
-          "lastClassName": "kxKaOB",
+          "lastClassName": "lemnZd",
           "rules": Array [
             "
         height: 100%;
@@ -97,8 +97,9 @@ exports[`matches <MasterDetailWrapper> snapshot 1`] = `
         display: flex;
         flex-direction: row;
         background-color: #fff;
+        transition: height 0.3s ease;
         &.limit-height {
-          max-height: 580px;
+          max-height: 549px;
         }
         &.auto-height {
           height: auto;
@@ -119,7 +120,7 @@ exports[`matches <MasterDetailWrapper> snapshot 1`] = `
     forwardedRef={null}
   >
     <div
-      className="sc-bdVaJa kxKaOB"
+      className="sc-bdVaJa lemnZd"
     />
   </StyledComponent>
 </styled.div>

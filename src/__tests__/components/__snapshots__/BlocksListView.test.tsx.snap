@@ -142,7 +142,7 @@ exports[`matches <BlocksListView blocks=[]> snapshot 1`] = `
                         "componentStyle": ComponentStyle {
                           "componentId": "sc-fjdhpX",
                           "isStatic": false,
-                          "lastClassName": "jyJVlm",
+                          "lastClassName": "eeAZVK",
                           "rules": Array [
                             "
                         font-size: 1rem;
@@ -170,6 +170,12 @@ exports[`matches <BlocksListView blocks=[]> snapshot 1`] = `
                         }
                       ",
                             "
+                        background-color: ",
+                            [Function],
+                            ";
+                        color: ",
+                            [Function],
+                            ";
                         .block-number {
                           color: #3498db;
                         }
@@ -197,7 +203,7 @@ exports[`matches <BlocksListView blocks=[]> snapshot 1`] = `
                     nonClickable={true}
                   >
                     <div
-                      className="sc-jTzLTM sc-fjdhpX jyJVlm"
+                      className="sc-jTzLTM sc-fjdhpX eeAZVK"
                     >
                       No blocks found
                     </div>
@@ -392,7 +398,7 @@ exports[`matches <BlocksListView blocks={...}> snapshot 1`] = `
                         "componentStyle": ComponentStyle {
                           "componentId": "sc-fjdhpX",
                           "isStatic": false,
-                          "lastClassName": "bTyIGf",
+                          "lastClassName": "dAFgKH",
                           "rules": Array [
                             "
                         font-size: 1rem;
@@ -420,6 +426,12 @@ exports[`matches <BlocksListView blocks={...}> snapshot 1`] = `
                         }
                       ",
                             "
+                        background-color: ",
+                            [Function],
+                            ";
+                        color: ",
+                            [Function],
+                            ";
                         .block-number {
                           color: #3498db;
                         }
@@ -447,7 +459,7 @@ exports[`matches <BlocksListView blocks={...}> snapshot 1`] = `
                     onClick={[Function]}
                   >
                     <div
-                      className="sc-jTzLTM sc-fjdhpX bTyIGf"
+                      className="sc-jTzLTM sc-fjdhpX dAFgKH"
                       onClick={[Function]}
                     >
                       <div
@@ -476,7 +488,7 @@ exports[`matches <BlocksListView blocks={...}> snapshot 1`] = `
                         "componentStyle": ComponentStyle {
                           "componentId": "sc-fjdhpX",
                           "isStatic": false,
-                          "lastClassName": "bTyIGf",
+                          "lastClassName": "dAFgKH",
                           "rules": Array [
                             "
                         font-size: 1rem;
@@ -504,6 +516,12 @@ exports[`matches <BlocksListView blocks={...}> snapshot 1`] = `
                         }
                       ",
                             "
+                        background-color: ",
+                            [Function],
+                            ";
+                        color: ",
+                            [Function],
+                            ";
                         .block-number {
                           color: #3498db;
                         }
@@ -531,7 +549,7 @@ exports[`matches <BlocksListView blocks={...}> snapshot 1`] = `
                     onClick={[Function]}
                   >
                     <div
-                      className="sc-jTzLTM sc-fjdhpX bTyIGf"
+                      className="sc-jTzLTM sc-fjdhpX dAFgKH"
                       onClick={[Function]}
                     >
                       <div

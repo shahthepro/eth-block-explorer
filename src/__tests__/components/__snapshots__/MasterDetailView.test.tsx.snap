@@ -27,7 +27,7 @@ exports[`matches <MasterDetailView autoHeight masterOpen> snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "sc-bdVaJa",
             "isStatic": true,
-            "lastClassName": "kxKaOB",
+            "lastClassName": "lemnZd",
             "rules": Array [
               "
           height: 100%;
@@ -35,8 +35,9 @@ exports[`matches <MasterDetailView autoHeight masterOpen> snapshot 1`] = `
           display: flex;
           flex-direction: row;
           background-color: #fff;
+          transition: height 0.3s ease;
           &.limit-height {
-            max-height: 580px;
+            max-height: 549px;
           }
           &.auto-height {
             height: auto;
@@ -57,7 +58,7 @@ exports[`matches <MasterDetailView autoHeight masterOpen> snapshot 1`] = `
       forwardedRef={null}
     >
       <div
-        className="limit-height auto-height sc-bdVaJa kxKaOB"
+        className="limit-height auto-height sc-bdVaJa lemnZd"
       >
         <styled.div
           className=""
@@ -176,7 +177,7 @@ exports[`matches <MasterDetailView autoHeight> snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "sc-bdVaJa",
             "isStatic": true,
-            "lastClassName": "kxKaOB",
+            "lastClassName": "lemnZd",
             "rules": Array [
               "
           height: 100%;
@@ -184,8 +185,9 @@ exports[`matches <MasterDetailView autoHeight> snapshot 1`] = `
           display: flex;
           flex-direction: row;
           background-color: #fff;
+          transition: height 0.3s ease;
           &.limit-height {
-            max-height: 580px;
+            max-height: 549px;
           }
           &.auto-height {
             height: auto;
@@ -206,7 +208,7 @@ exports[`matches <MasterDetailView autoHeight> snapshot 1`] = `
       forwardedRef={null}
     >
       <div
-        className="limit-height auto-height sc-bdVaJa kxKaOB"
+        className="limit-height auto-height sc-bdVaJa lemnZd"
       >
         <styled.div
           className=""
@@ -325,7 +327,7 @@ exports[`matches <MasterDetailView masterOpen> snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "sc-bdVaJa",
             "isStatic": true,
-            "lastClassName": "kxKaOB",
+            "lastClassName": "lemnZd",
             "rules": Array [
               "
           height: 100%;
@@ -333,8 +335,9 @@ exports[`matches <MasterDetailView masterOpen> snapshot 1`] = `
           display: flex;
           flex-direction: row;
           background-color: #fff;
+          transition: height 0.3s ease;
           &.limit-height {
-            max-height: 580px;
+            max-height: 549px;
           }
           &.auto-height {
             height: auto;
@@ -355,7 +358,7 @@ exports[`matches <MasterDetailView masterOpen> snapshot 1`] = `
       forwardedRef={null}
     >
       <div
-        className="limit-height  sc-bdVaJa kxKaOB"
+        className="limit-height  sc-bdVaJa lemnZd"
       >
         <styled.div
           className=""
@@ -474,7 +477,7 @@ exports[`matches <MasterDetailView> snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "sc-bdVaJa",
             "isStatic": true,
-            "lastClassName": "kxKaOB",
+            "lastClassName": "lemnZd",
             "rules": Array [
               "
           height: 100%;
@@ -482,8 +485,9 @@ exports[`matches <MasterDetailView> snapshot 1`] = `
           display: flex;
           flex-direction: row;
           background-color: #fff;
+          transition: height 0.3s ease;
           &.limit-height {
-            max-height: 580px;
+            max-height: 549px;
           }
           &.auto-height {
             height: auto;
@@ -504,7 +508,7 @@ exports[`matches <MasterDetailView> snapshot 1`] = `
       forwardedRef={null}
     >
       <div
-        className="limit-height  sc-bdVaJa kxKaOB"
+        className="limit-height  sc-bdVaJa lemnZd"
       >
         <styled.div
           className=""

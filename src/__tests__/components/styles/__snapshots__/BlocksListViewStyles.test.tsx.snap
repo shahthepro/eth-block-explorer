@@ -10,7 +10,7 @@ exports[`matches <BlocksListViewItem> snapshot 1`] = `
         "componentStyle": ComponentStyle {
           "componentId": "sc-fjdhpX",
           "isStatic": false,
-          "lastClassName": "bTyIGf",
+          "lastClassName": "dAFgKH",
           "rules": Array [
             "
         font-size: 1rem;
@@ -38,6 +38,12 @@ exports[`matches <BlocksListViewItem> snapshot 1`] = `
         }
       ",
             "
+        background-color: ",
+            [Function],
+            ";
+        color: ",
+            [Function],
+            ";
         .block-number {
           color: #3498db;
         }
@@ -64,7 +70,7 @@ exports[`matches <BlocksListViewItem> snapshot 1`] = `
     forwardedRef={null}
   >
     <div
-      className="sc-jTzLTM sc-fjdhpX bTyIGf"
+      className="sc-jTzLTM sc-fjdhpX dAFgKH"
     />
   </StyledComponent>
 </Styled(styled.div)>

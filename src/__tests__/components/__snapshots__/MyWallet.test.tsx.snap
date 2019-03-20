@@ -148,29 +148,43 @@ exports[`matches <MyWallet wallet={isConnected: true}> snapshot 1`] = `
             <div
               className="sc-bZQynM ezknic"
             >
-              <styled.h2>
+              <Styled(styled.div)>
                 <StyledComponent
                   forwardedComponent={
                     Object {
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "sc-jzJRlG",
+                        "componentId": "sc-kgoBCf",
                         "isStatic": true,
-                        "lastClassName": "boNWI",
+                        "lastClassName": "bFDsDt",
                         "rules": Array [
                           "
-                      font-weight: 100;
-                      margin: 0;
-                      padding-bottom: 1rem;
+                      padding: 1rem;
+                      background: white;
+                      margin: 1rem 0;
+                      border: 1px solid rgba(0, 0, 0, 0.05);
+                      border-left: 5px solid red;
+                      p {
+                        margin: 0;
+                        font-weight: 100;
+                      }
+                      strong {
+                        margin-right: 1rem;
+                      }
+                    ",
+                          "
+                      border-left: 5px solid rgb(0, 122, 255);
                     ",
                         ],
                       },
-                      "displayName": "styled.h2",
-                      "foldedComponentIds": Array [],
+                      "displayName": "Styled(styled.div)",
+                      "foldedComponentIds": Array [
+                        "sc-chPdSV",
+                      ],
                       "render": [Function],
-                      "styledComponentId": "sc-jzJRlG",
-                      "target": "h2",
+                      "styledComponentId": "sc-kgoBCf",
+                      "target": "div",
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
@@ -178,18 +192,175 @@ exports[`matches <MyWallet wallet={isConnected: true}> snapshot 1`] = `
                   }
                   forwardedRef={null}
                 >
-                  <h2
-                    className="sc-jzJRlG boNWI"
+                  <div
+                    className="sc-chPdSV sc-kgoBCf bFDsDt"
                   >
-                    You are connected to 
-                    Mainnet
-                     network with the wallet address 
-                    <em>
-                      1234567890abcdef
-                    </em>
-                  </h2>
+                    <p>
+                      You are connected to 
+                      <Styled(styled.button)
+                        disabled={true}
+                      >
+                        <StyledComponent
+                          disabled={true}
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-cSHVUG",
+                                "isStatic": false,
+                                "lastClassName": "CZCVM",
+                                "rules": Array [
+                                  "
+                              background-color: rgba(0, 122, 255, 1);
+                              color: #fff;
+                              border: 0;
+                              padding: ",
+                                  [Function],
+                                  ";
+                              font-size: ",
+                                  [Function],
+                                  ";
+                              cursor: pointer;
+                            
+                              &:hover {
+                                background-color: rgba(0, 122, 255, 0.8);
+                              }
+                            
+                              &:disabled {
+                                background-color: #ccc;
+                                color: #888;
+                              }
+                            ",
+                                  "
+                              background-color: transparent;
+                              color: rgba(0, 122, 255, 1);
+                              padding: 0;
+                              text-decoration: underline;
+                            
+                              &:hover {
+                                background-color: transparent;
+                                color: rgba(0, 122, 255, 0.8);    
+                              }
+                            
+                              &:disabled {
+                                cursor: default;
+                                background-color: transparent;
+                                color: rgba(122, 122, 122, 1);
+                              }
+                            ",
+                                ],
+                              },
+                              "displayName": "Styled(styled.button)",
+                              "foldedComponentIds": Array [
+                                "sc-fjdhpX",
+                              ],
+                              "render": [Function],
+                              "styledComponentId": "sc-cSHVUG",
+                              "target": "button",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <button
+                            className="sc-fjdhpX sc-cSHVUG CZCVM"
+                            disabled={true}
+                          >
+                            Mainnet
+                             network
+                          </button>
+                        </StyledComponent>
+                      </Styled(styled.button)>
+                      .
+                    </p>
+                    <br />
+                    <p>
+                      Your wallet address is 
+                      <Styled(styled.button)
+                        disabled={true}
+                      >
+                        <StyledComponent
+                          disabled={true}
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-cSHVUG",
+                                "isStatic": false,
+                                "lastClassName": "CZCVM",
+                                "rules": Array [
+                                  "
+                              background-color: rgba(0, 122, 255, 1);
+                              color: #fff;
+                              border: 0;
+                              padding: ",
+                                  [Function],
+                                  ";
+                              font-size: ",
+                                  [Function],
+                                  ";
+                              cursor: pointer;
+                            
+                              &:hover {
+                                background-color: rgba(0, 122, 255, 0.8);
+                              }
+                            
+                              &:disabled {
+                                background-color: #ccc;
+                                color: #888;
+                              }
+                            ",
+                                  "
+                              background-color: transparent;
+                              color: rgba(0, 122, 255, 1);
+                              padding: 0;
+                              text-decoration: underline;
+                            
+                              &:hover {
+                                background-color: transparent;
+                                color: rgba(0, 122, 255, 0.8);    
+                              }
+                            
+                              &:disabled {
+                                cursor: default;
+                                background-color: transparent;
+                                color: rgba(122, 122, 122, 1);
+                              }
+                            ",
+                                ],
+                              },
+                              "displayName": "Styled(styled.button)",
+                              "foldedComponentIds": Array [
+                                "sc-fjdhpX",
+                              ],
+                              "render": [Function],
+                              "styledComponentId": "sc-cSHVUG",
+                              "target": "button",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <button
+                            className="sc-fjdhpX sc-cSHVUG CZCVM"
+                            disabled={true}
+                          >
+                            <em>
+                              1234567890abcdef
+                            </em>
+                          </button>
+                        </StyledComponent>
+                      </Styled(styled.button)>
+                    </p>
+                  </div>
                 </StyledComponent>
-              </styled.h2>
+              </Styled(styled.div)>
               <Styled(styled.button)
                 disabled={false}
                 onClick={[Function]}
@@ -201,9 +372,9 @@ exports[`matches <MyWallet wallet={isConnected: true}> snapshot 1`] = `
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "sc-kgoBCf",
+                        "componentId": "sc-kAzzGY",
                         "isStatic": false,
-                        "lastClassName": "kRyHdK",
+                        "lastClassName": "hNpzMa",
                         "rules": Array [
                           "
                       background-color: rgba(0, 122, 255, 1);
@@ -236,10 +407,10 @@ exports[`matches <MyWallet wallet={isConnected: true}> snapshot 1`] = `
                       },
                       "displayName": "Styled(styled.button)",
                       "foldedComponentIds": Array [
-                        "sc-cSHVUG",
+                        "sc-fjdhpX",
                       ],
                       "render": [Function],
-                      "styledComponentId": "sc-kgoBCf",
+                      "styledComponentId": "sc-kAzzGY",
                       "target": "button",
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
@@ -250,7 +421,7 @@ exports[`matches <MyWallet wallet={isConnected: true}> snapshot 1`] = `
                   onClick={[Function]}
                 >
                   <button
-                    className="sc-cSHVUG sc-kgoBCf kRyHdK"
+                    className="sc-fjdhpX sc-kAzzGY hNpzMa"
                     disabled={false}
                     onClick={[Function]}
                   >
