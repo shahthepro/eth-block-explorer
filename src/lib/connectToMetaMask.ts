@@ -5,10 +5,10 @@ import { IWalletConnectedResponse } from './../types';
  * Connects with any software wallet that has injected a web3 provider
  */
 const connectToMetaMask = async (): Promise<IWalletConnectedResponse> => {
-  const provider = Web3.givenProvider;
+  let provider = Web3.givenProvider;
 
-  if (!provider) {
-    throw new Error(`Cannot find any web3 provider. Is your software wallet up and running?`);
+  if (process.env.REACT_APP_WS_PROVIDER) {
+    new Web3.providers.WebsocketProvider(process.env.REACT_APP_WS_PROVIDER);
   }
 
   const web3 = new Web3(provider);
